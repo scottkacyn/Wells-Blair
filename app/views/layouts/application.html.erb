@@ -23,11 +23,11 @@
 			<!-- Navigation Menu -->
 			<div class="nav-menu">
 				<ul class="nav">
-					<li><a href="/" class="scroll link selected">Home</a></li>
-					<li><a href="/services" class="scroll link">What We Do</a></li>
-					<li><a href="/about" class="scroll link">Who We Are</a></li>
-					<li><a href="/clients" class="scroll link">Client Solutions</a></li>
-					<li><a href="/opportunities" class="scroll link">Tax Opportunities</a></li>
+					<li><a href="/" class="scroll link <%= is_active('index', action_name) %>">Home</a></li>
+					<li><a href="/services" class="scroll link <%= is_active('services', action_name) %>">What We Do</a></li>
+					<li><a href="/about" class="scroll link <%= is_active('about', action_name) %>">Who We Are</a></li>
+					<li><a href="/clients" class="scroll link <%= is_active('client_solutions', action_name) %>">Client Solutions</a></li>
+					<li><a href="/opportunities" class="scroll link <%= is_active('tax_opportunities', action_name) %>">Tax Opportunities</a></li>
 					<li style="padding-top:5px; padding-left:10px;"><a href="/contact" class="button" name="submit">Start a Conversation</a></li>
 				</ul>
 			</div><!-- end nav menu -->
