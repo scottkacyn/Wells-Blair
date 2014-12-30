@@ -1,0 +1,64 @@
+<section id="contact" class="section">
+
+	<section class="callout">
+		<div class="container">
+			<h2 class="title">Start a Conversation</h2>
+			<h4 class="subtitle">If you're a company looking for great talent or a tax specialist looking to<br>improve your career, fill out the form below and we'll get in touch with you.</h4>
+		</div>
+	</section>
+
+	<div class="container">
+		
+		<div class="contact-form">
+			
+			<div class="error-container">
+				<span class="error" id="error-name">Please enter your name</span>
+				<span class="error" id="error-email">Please enter your email</span>
+				<span class="error" id="error-valid-email">Your e-mail is not a valid format</span>
+				<span class="error" id="error-valid-phone">Your phone number is not a valid format</span>
+				<span class="error" id="error-timedout">The email submission timed out. Please try again.</span>
+				<span class="error" id="error-state">Oops! An error occurred. Please try again later.</span>
+				<span class="success" id="email-success">Message received! Thank you.</span>
+			</div><!-- end error messages -->
+
+			<form id="contact-us" method="post" action="php/mail.php">
+				
+				<div class="eight columns">
+					<input type="text" name="name" id="name" required="required" placeholder="Name" />
+					<input type="email" name="email" id="email" required="required" placeholder="Email" />
+					<input type="text" name="phone" id="phone" placeholder="Phone" />
+				</div>
+
+				<div class="eight columns">
+				<textarea name="message" id="message" placeholder="Message"></textarea>
+				</div>
+
+				<button type="submit" id="submit" name="submit">Send Message</button> 
+			</form>
+		</div><!-- end contact form -->
+
+	</div><!-- end container -->
+
+	<div class="row">
+		<div class="eight columns">
+			<%= image_tag "map.png", id: "google-map" %>
+		</div>
+		<div class="eight columns">
+			&nbsp;
+		</div>
+	</div>
+</section><!-- end map section -->
+
+
+<!-- ///////////// Social Media Section ///////////// -->
+
+<section class="social">
+	<div class="container">
+
+		<h4 class="subtitle">Check out our LinkedIn page.</h4>
+
+		<ul class="social-links">
+			<li><a href="https://www.linkedin.com/company/wells-blair-ltd." target="_blank" class="social-btn linkedin-btn"><i class="fa fa-linkedin fa-2x"></i></a></li>
+		</ul>
+	</div><!-- end container -->
+</section><!-- end social media section -->

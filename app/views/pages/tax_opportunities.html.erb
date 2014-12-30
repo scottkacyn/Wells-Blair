@@ -1,0 +1,44 @@
+<section id="portfolio" class="section">
+
+	<section class="callout">
+		<div class="container">
+			<h2 class="title">Tax Opportunities</h2>
+			<h4 class="subtitle">Browse our open tax positions in Chicago and Houston</h4>
+		</div>
+	</section>
+
+	<div class="container">
+
+		<!-- Project Expander -->
+		<div class="item-expander">
+			<div id="item-expander">
+				<p class="close-btn"><a class="close"></a></p>
+				<div class="expander-container"></div>
+			</div>
+		</div>
+
+		<!-- Portfolio Filters -->
+		<div id="options" class="container filter-menu">
+			<ul id="filters" class="option-set" data-option-key="filter">
+				<li><a href="#filter" data-option-value="*" class="selected">All</a></li>
+				<li><a href="#filter" data-option-value=".chicago">Chicago</a></li>
+				<li><a href="#filter" data-option-value=".houston">Houston</a></li>
+			</ul>
+		</div>
+	
+		<div id="portfolio-container">
+		<!-- Portfolio Items -->
+			<div class="portfolio-items">
+				<% @jobs.each do |job| %>
+					<div class="item <%= (job.location == 'Chicago, IL') ? 'chicago' : 'houston' %>">
+						<%= image_tag "project-1.jpg" %>
+						<div class="mask">
+						</div>
+						<h5><%= link_to job.title, job %></h5>
+						<p><%= job.industry %> | <%= job.location %></p>
+					</div>
+				<% end %>
+			</div>
+		</div><!-- end portfolio items -->
+	</div><!-- end container -->
+</section><!-- end portfolio section -->
