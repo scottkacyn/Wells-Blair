@@ -1,0 +1,6278 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+
+
+
+
+
+ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	zooom:1;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1 {
+	font-size: 34px;
+	  line-height: 45px;
+}
+h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	line-height: 36px;
+}
+h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+h4 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+h5 {
+	font-size: 16px;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+h6 {
+	font-size: 15px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #979797;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #979797;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+/* 
+ *  Owl Carousel CSS3 Transitions 
+ *  v1.3.2
+ */
+
+
+.owl-origin {
+	-webkit-perspective: 1200px;
+	-webkit-perspective-origin-x : 50%;
+	-webkit-perspective-origin-y : 50%;
+	-moz-perspective : 1200px;
+	-moz-perspective-origin-x : 50%;
+	-moz-perspective-origin-y : 50%;
+	perspective : 1200px;
+}
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+/* backSlide */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+/* goDown */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {opacity: 1}
+}
+@-moz-keyframes empty {
+  0% {opacity: 1}
+}
+@keyframes empty {
+  0% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes backSlideOut {
+  25% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+}
+@-moz-keyframes backSlideOut {
+  25% { opacity: .5; -moz-transform: translateZ(-500px); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+}
+@keyframes backSlideOut {
+  25% { opacity: .5; transform: translateZ(-500px); }
+  75% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+}
+@-webkit-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }
+}
+@-moz-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -moz-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px); }
+  100% { opacity: 1; -moz-transform: translateZ(0) translateX(0); }
+}
+@keyframes backSlideIn {
+  0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; transform: translateZ(-500px); }
+  100% { opacity: 1; transform: translateZ(0) translateX(0); }
+}
+@-webkit-keyframes scaleToFade {
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleToFade {
+  to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleToFade {
+  to { opacity: 0; transform: scale(.8); }
+}
+@-webkit-keyframes goDown {
+  from { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes goDown {
+  from { -moz-transform: translateY(-100%); }
+}
+@keyframes goDown {
+  from { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes scaleUpFrom {
+  from { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpFrom {
+  from { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpFrom {
+  from { opacity: 0; transform: scale(1.5); }
+}
+
+@-webkit-keyframes scaleUpTo {
+  to { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpTo {
+  to { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpTo {
+  to { opacity: 0; transform: scale(1.5); }
+}
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Large Monitors
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+
+    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns                     { width: 40px;  }
+    .container .two.columns                     { width: 100px; }
+    .container .three.columns                   { width: 160px; }
+    .container .four.columns                    { width: 220px; }
+    .container .five.columns                    { width: 280px; }
+    .container .six.columns                     { width: 340px; }
+    .container .seven.columns                   { width: 400px; }
+    .container .eight.columns                   { width: 460px; }
+    .container .nine.columns                    { width: 520px; }
+    .container .ten.columns                     { width: 580px; }
+    .container .eleven.columns                  { width: 640px; }
+    .container .twelve.columns                  { width: 700px; }
+    .container .thirteen.columns                { width: 760px; }
+    .container .fourteen.columns                { width: 820px; }
+    .container .fifteen.columns                 { width: 880px; }
+    .container .sixteen.columns                 { width: 940px; }
+
+    .container .one-third.column                { width: 300px; }
+    .container .two-thirds.column               { width: 620px; }
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 60px;  }
+    .container .offset-by-two                   { padding-left: 120px; }
+    .container .offset-by-three                 { padding-left: 180px; }
+    .container .offset-by-four                  { padding-left: 240px; }
+    .container .offset-by-five                  { padding-left: 300px; }
+    .container .offset-by-six                   { padding-left: 360px; }
+    .container .offset-by-seven                 { padding-left: 420px; }
+    .container .offset-by-eight                 { padding-left: 480px; }
+    .container .offset-by-nine                  { padding-left: 540px; }
+    .container .offset-by-ten                   { padding-left: 600px; }
+    .container .offset-by-eleven                { padding-left: 660px; }
+    .container .offset-by-twelve                { padding-left: 720px; }
+    .container .offset-by-thirteen              { padding-left: 780px; }
+    .container .offset-by-fourteen              { padding-left: 840px; }
+    .container .offset-by-fifteen               { padding-left: 900px; }
+
+
+/* #Large Monitors
+================================================== */
+
+@media only screen and (min-width: 1200px)  {
+ 
+        .container                      { width: 1200px;}
+        .container .column,
+        .container .columns             { margin-left: 10px; margin-right: 10px; }
+        
+        .column.alpha, .columns.alpha   { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega   { margin-right: 0; margin-left: 10px; }
+            .column.alpha.omega, .columns.alpha.omega {margin-left: 0; margin-right: 0}
+ 
+        .container .one.column          { width: 55px; }
+        .container .two.columns         { width: 130px; }
+        .container .three.columns       { width: 205px; }
+        .container .four.columns        { width: 280px; }
+        .container .five.columns        { width: 355px; }
+        .container .six.columns         { width: 430px; }
+        .container .seven.columns       { width: 505px; }
+        .container .eight.columns       { width: 580px; }
+        .container .nine.columns        { width: 655px; }
+        .container .ten.columns         { width: 730px; }
+        .container .eleven.columns      { width: 805px; }
+        .container .twelve.columns      { width: 880px; }
+        .container .thirteen.columns    { width: 955px; }
+        .container .fourteen.columns    { width: 1030px; }
+        .container .fifteen.columns     { width: 1105px; }
+        .container .sixteen.columns     { width: 1180px; }
+ 
+        .container .one-third.column    { width: 380px; }
+        .container .two-thirds.column   { width: 780px; }
+ 
+        /* Offsets */
+        .container .offset-by-one       { padding-left: 75px; }
+        .container .offset-by-two       { padding-left: 150px; }
+        .container .offset-by-three     { padding-left: 225px; }
+        .container .offset-by-four      { padding-left: 300px; }
+        .container .offset-by-five      { padding-left: 375px; }
+        .container .offset-by-six       { padding-left: 450px; }
+        .container .offset-by-seven     { padding-left: 525px; }
+        .container .offset-by-eight     { padding-left: 600px; }
+        .container .offset-by-nine      { padding-left: 675px; }
+        .container .offset-by-ten       { padding-left: 750px; }
+        .container .offset-by-eleven    { padding-left: 825px; }
+        .container .offset-by-twelve    { padding-left: 900px; }
+        .container .offset-by-thirteen  { padding-left: 975px; }
+        .container .offset-by-fourteen  { padding-left: 1050px; }
+        .container .offset-by-fifteen   { padding-left: 1125px; }
+ 
+}
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container                                  { width: 768px; }
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .container .one.column,
+        .container .one.columns                     { width: 28px; }
+        .container .two.columns                     { width: 76px; }
+        .container .three.columns                   { width: 124px; }
+        .container .four.columns                    { width: 172px; }
+        .container .five.columns                    { width: 220px; }
+        .container .six.columns                     { width: 268px; }
+        .container .seven.columns                   { width: 316px; }
+        .container .eight.columns                   { width: 364px; }
+        .container .nine.columns                    { width: 412px; }
+        .container .ten.columns                     { width: 460px; }
+        .container .eleven.columns                  { width: 508px; }
+        .container .twelve.columns                  { width: 556px; }
+        .container .thirteen.columns                { width: 604px; }
+        .container .fourteen.columns                { width: 652px; }
+        .container .fifteen.columns                 { width: 700px; }
+        .container .sixteen.columns                 { width: 748px; }
+
+        .container .one-third.column                { width: 236px; }
+        .container .two-thirds.column               { width: 492px; }
+
+        /* Offsets */
+        .container .offset-by-one                   { padding-left: 48px; }
+        .container .offset-by-two                   { padding-left: 96px; }
+        .container .offset-by-three                 { padding-left: 144px; }
+        .container .offset-by-four                  { padding-left: 192px; }
+        .container .offset-by-five                  { padding-left: 240px; }
+        .container .offset-by-six                   { padding-left: 288px; }
+        .container .offset-by-seven                 { padding-left: 336px; }
+        .container .offset-by-eight                 { padding-left: 384px; }
+        .container .offset-by-nine                  { padding-left: 432px; }
+        .container .offset-by-ten                   { padding-left: 480px; }
+        .container .offset-by-eleven                { padding-left: 528px; }
+        .container .offset-by-twelve                { padding-left: 576px; }
+        .container .offset-by-thirteen              { padding-left: 624px; }
+        .container .offset-by-fourteen              { padding-left: 672px; }
+        .container .offset-by-fifteen               { padding-left: 720px; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 300px; }
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 420px; }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+html, body {
+	font-family: 'Open Sans', 'HelveticaNeue', Helvetica, Georgia, sans-serif;
+	font-weight: 400;
+	color:#939393;
+	font-size: 14px;
+	line-height: 24px;
+	background: #fff;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin-left:0;
+	margin-right:0;
+	-webkit-font-smoothing: antialiased;
+}
+
+p{margin-bottom: 16px;}
+em{font-style: italic;}
+
+/* --------------------------------
+Links
+-------------------------------- */
+a{
+	color: #e74c3c;
+	text-decoration:none;
+	outline:none;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+a:hover,
+a:active,
+a:focus{
+	color:#2f2f2f;
+}
+
+/* --------------------------------
+Typography
+-------------------------------- */
+h1, h2, h3, h4, h5, h6{
+	display: block;
+	color:#484848;
+}
+h1{
+	font-family: 'Oswald', 'HelveticaNeue', Helvetica, Georgia, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 48px;
+	line-height: 56px;
+}
+h2{
+	font-family: 'Oswald', 'HelveticaNeue', Helvetica, Georgia, sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 36px;	
+	line-height: 44px;
+}
+h3{
+	font-size: 32px;	
+	line-height: 40px;
+}
+h4{
+	font-size: 24px;	
+	line-height: 32px;
+}
+h5{
+	font-size: 16px;	
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+h6{
+	font-size: 12px;	
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.title{
+	font-size: 48px;
+	line-height: 72px;
+	color: #e74c3c;
+	margin: 0 0 16px 0;
+	padding: 0;
+}
+.title span.title-box{
+	display: inline-block;
+	padding: 0 8px;
+	color: #fff;
+	margin:2px 4px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.subtitle{
+	margin: 0 0 56px 0; 
+	padding: 0;
+}
+
+/* --------------------------------
+Helper Classes
+-------------------------------- */
+
+/* Colors */
+.white{color:#ffffff !important;}
+.color {color: #e74c3c;}
+.light-gray {color:#6c6c6c !important;}
+.dark-gray {color:#2f2f2f !important;}
+.gray-bg {background-color:#f8f8f8;}
+
+/* Alignment */
+.left-align{text-align: left;}
+.right-align{text-align: right;}
+.center-align{text-align: center;}
+
+/* Spacing */
+.extra-margin{margin: 56px 0 !important;}
+
+/* --------------------------------
+Images
+-------------------------------- */
+
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto;
+}
+
+/* --------------------------------
+Buttons
+-------------------------------- */
+
+a.button{
+	font-family: 'Oswald', 'HelveticaNeue', Helvetica, Georgia, sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	color: #fff !important;
+	background: #e74c3c;
+	display: inline-block;
+	padding: 8px 16px;
+	text-transform: uppercase;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+a.button:hover{background: #6c6c6c;}
+a.button.selected{color:#fff !important;}
+
+/* --------------------------------
+Form Inputs
+-------------------------------- */
+
+input,
+textarea{
+	width:100%;
+	padding: 16px;
+	font-size: 16px;
+	border:1px solid rgba(47,47,47,.3);
+	color:#6c6c6c !important;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+input:focus,
+textarea:focus{
+		outline: none;
+		border:1px solid rgba(47,47,47,.6);
+		color:#2f2f2f;	
+		background:rgba(47,47,47,.1) 	
+}
+input:hover,
+textarea:hover{
+		background:rgba(47,47,47,.1) 	
+}
+
+/* --------------------------------
+Tooltips
+-------------------------------- */
+
+.tipper { 
+	height: 1px; 
+	left: -99999px; 
+	position: absolute; 
+	pointer-events: none; 
+	top: -99999px; 
+	width: 1px; 
+}
+.tipper .tipper-content { 
+	background: rgba(0, 0, 0, 0.85); 
+	border-radius: 4px; 
+	color: #fff; 
+	display: block; 
+	float: left; 
+	font-size: 14px; 
+	font-weight: 400; 
+	margin: 0; 
+	padding: 8px 12px; 
+	position: relative; 
+	white-space: nowrap; 
+}
+.tipper-content:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: rgba(0, 0, 0, 0.85); 
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+/* --------------------------------
+Callout Boxes
+-------------------------------- */
+
+.callout-box{
+	background: #ecf0f1;
+	margin: 24px 0;
+	padding: 16px;
+	border-left: 4px solid #6c6c6c;
+	position: relative;
+}
+.callout-box.co-colored-box{border-left: 4px solid #e74c3c;}
+.callout-box.co-colored-box h5 {color:#e74c3c;}
+.callout-box.co-icon-box{
+	padding-left: 75px;
+}
+.callout-box.co-icon-box i{
+	position: absolute;
+	left: 12px;	
+	top: 30px;
+	font-size: 48px;
+	color:#6c6c6c;
+}
+
+/* --------------------------------
+Block Quotes
+-------------------------------- */
+
+blockquote{
+	width: 75%;
+	margin: 0 auto;
+	font-size: 48px;
+	line-height: 56px;
+}
+blockquote i{
+	display: inline-block;
+	padding-top: 16px;
+	font-size: 28px;
+	opacity: .5;
+}
+blockquote i.fa-quote-left{float: left;}
+blockquote i.fa-quote-right{float: right;}
+blockquote span {
+	display: block;
+	font-size: 24px;
+}
+blockquote span:before{content: "\2013  ";}
+
+/* --------------------------------
+Social Media Buttons
+-------------------------------- */
+
+a.social-btn{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: #ecf0f1;
+	color:#6c6c6c;
+	text-align: center;
+	padding: 4px 0 0 1px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+a.social-btn:hover{color:#fff;} 
+a.facebook-btn:hover{background:#3B5998;}
+a.twitter-btn:hover{background:#00aced;}
+a.envelope-btn:hover{background:#2f2f2f;}
+a.behance-btn:hover{background:#161616;}
+a.tumblr-btn:hover{background:#32506d;}
+a.instagram-btn:hover{background:#3f729b;}
+a.heart-btn:hover{background:#c0392b;}
+a.linkedin-btn:hover{background:#007bb6;}
+a.vimeo-btn:hover{background:#aad450;}
+a.youtube-btn:hover{background:#bb0000;}
+a.google-plus-btn:hover{background:#dd4b39;}
+a.flickr-btn:hover{background:#ff0084;}
+a.skype-btn:hover{background:#12A5F4;}
+a.dropbox-btn:hover{background:#3d9ae8;}
+a.thumbs-btn:hover{background:#3B5998;}
+a.dribbble-btn:hover{background:#ea4c89;}
+a.pinterest-btn:hover{background:#cb2027;}
+a.apple-btn:hover{background:#2f2f2f;}
+a.windows-btn:hover{background:#00bbf4;}
+a.github-btn:hover{background:#2f2f2f;}
+a.android-btn:hover{background:#84bc00;}
+a.rss-btn:hover{background:#fa9829;}
+a.html5-btn:hover{background:#e15403;}
+a.css3-btn:hover{background:#006ebc;}
+a.twitter-square-btn:hover{background:#00aced;}
+
+/* --------------------------------
+Alert Boxes
+-------------------------------- */
+
+.alert{
+	position: relative;
+	padding: 8px 32px 8px 8px;
+	margin: 8px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.alert span{font-weight: 400;}
+.alert span.close-alert{
+	position: absolute;
+	top: 14px;
+	right: 12px;
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: image-url("close-btn-dark.png");
+	background-size: 12px 12px;
+	cursor: pointer;
+	opacity: 0.2;
+}
+.alert.congrats{
+	border:1px solid rgba(39,174,96,.4);
+	background: rgba(39,174,96,.2);
+	color: #1b954f;
+}
+.alert.info{
+	border:1px solid rgba(41,128,185,.4);
+	background: rgba(41,128,185,.2);
+	color: #1c6a9d;
+}
+.alert.warning{
+	border:1px solid rgba(243,156,18,.4);
+	background: rgba(243,156,18,.2);
+	color: #de8c0a;
+}
+.alert.danger{
+	border:1px solid rgba(192,57,43,.4);
+	background: rgba(192,57,43,.2);
+	color: #af3022;
+}
+
+/* --------------------------------
+Base Layout
+-------------------------------- */
+/* line 13, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a, .header ul.social-links li a:hover,
+.service-item:hover i, .price-table:hover h4, .price-table h4.selected, a.price-button:hover, a.price-button.selected,
+.accordion-button:hover, .accordion-button i.fa-arrow-circle-o-down, .team-photo ul.team-social-links li a:hover,
+a.button-to-top:hover, .title, .mobile-nav-button:hover, .callout-box.co-colored-box h5,
+a.header-down-arrow:hover, .color, .slabtexted .headertext span:nth-child(2), .slabtexted
+.headertext span:nth-child(4), .item .mask a:hover, .site-logo:hover, .open-modal:hover,
+.timeline .timeline-item.active .year, .timeline .timeline-item:hover .year, #work-slider .work-item .zoom:hover {
+  color: #960000;
+}
+
+/* line 17, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav li a.selected,
+.nav li a:hover,
+.nav li a.current {
+  color: #960000 !important;
+}
+
+/* line 24, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.button, .skillbar-title, .skillbar-bar, button#submit, a.icon-btn,
+.service-item:hover a.button, .bg-color, .modal-container .close:hover,
+.owl-next:hover:after, .owl-prev:hover:after, .timeline .timeline-item.active .marker .dot,
+.timeline .timeline-item:hover .marker .dot, .title span.title-box,
+#featured .owl-next:hover:after, #featured .owl-prev:hover:after {
+  background: #960000;
+}
+
+/* line 26, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.button.big-btn {
+  font-size: 18px;
+  width: 260px;
+  padding: 15px;
+  text-align: center;
+}
+
+/* line 33, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+::selection {
+  color: #fff;
+  background: #960000;
+}
+
+/* line 34, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+::-moz-selection {
+  color: #fff;
+  background: #960000;
+}
+
+/* line 36, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+button#submit {
+  border: 1px solid #960000;
+}
+
+/* line 38, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.callout-box.co-colored-box {
+  border-left: 4px solid #960000;
+}
+
+/* line 40, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.container {
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+/* line 46, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.row {
+  margin-bottom: 32px;
+}
+
+/* line 47, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.animated {
+  visibility: hidden;
+}
+
+/* line 48, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.visible {
+  visibility: visible;
+}
+
+/* Call out titles */
+/* line 51, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.callout {
+  background: #fafafa;
+  padding-top: 40px;
+}
+
+/* line 52, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.callout h3 {
+  color: #343434;
+}
+
+/* line 53, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.callout .subtitle {
+  color: #343434;
+  margin: 0;
+}
+
+/* line 58, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.text-container {
+  background: #fafafa;
+  color: #343434 !important;
+  line-height: 2em;
+  padding-bottom: 50px;
+}
+
+/* line 65, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.text-container .container {
+  background: #fff;
+  padding: 0 !important;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 72, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.text-container .container p {
+  line-height: 2.4em;
+}
+
+/* Page Header */
+/* line 77, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.page-header {
+  text-align: center;
+  height: auto;
+  margin: 0 auto 56px auto;
+  padding: 0 0 48px 0;
+  border-bottom: 1px solid rgba(108, 108, 108, 0.2);
+}
+
+/* line 84, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.page-header .subtitle {
+  margin: 0;
+}
+
+/* --------------------------------
+Page Loader
+-------------------------------- */
+/* line 90, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2f2f2f;
+  z-index: 9999;
+}
+
+/* line 99, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.loader-title {
+  position: absolute;
+  margin: 0 0 0 -134px;
+  top: 33%;
+  left: 50%;
+  color: #b4b4b4;
+}
+
+/* line 106, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.loader {
+  position: absolute;
+  margin: -25px 0 0 -25px;
+  top: 50%;
+  left: 50%;
+  color: #b4b4b4;
+}
+
+/* --------------------------------
+Home (Header) Section
+-------------------------------- */
+/* line 118, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.home {
+  background: url(/images/banner-img-1.jpg) center center fixed;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+
+/* line 125, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.home:after {
+  clear: both;
+}
+
+/* line 126, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.header {
+  padding-top: 200px;
+  text-align: center;
+}
+
+/* line 131, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.headertext-slider {
+  display: block;
+  width: 550px !important;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 138, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.headertext {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 32px;
+  /*border:2px solid #fff;
+  background:url(../images/pattern-1.png) left top repeat
+  			  rgba(255,255,255,.7);*/
+  background-color: transparent;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 153, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slabtexted .headertext {
+  line-height: 1;
+}
+
+/* line 154, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slabtexted .headertext span:nth-child(2) {
+  line-height: 1;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 16px 0;
+  margin: 16px 0;
+}
+
+/* line 161, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slabtexted .headertext span:nth-child(3) {
+  line-height: 1;
+}
+
+/* line 162, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slabtexted .headertext span:nth-child(4) {
+  line-height: 1;
+  border-top: 2px solid #fff;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+/* line 169, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slabtexted .slabtext {
+  display: -moz-inline-box;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* line 174, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slabtextinactive .slabtext {
+  display: inline;
+  white-space: normal;
+  font-size: 1em !important;
+  letter-spacing: inherit !important;
+  word-spacing: inherit !important;
+  *letter-spacing: 0 !important;
+  *word-spacing: 0 !important;
+}
+
+/* line 183, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slabtextdone .slabtext {
+  display: block;
+}
+
+/* line 184, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slabtext {
+  color: #111;
+}
+
+/* line 186, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.header-down-arrow {
+  color: #555;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+/* line 193, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.header-down-arrow:after {
+  content: "\25be";
+}
+
+/* line 194, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.header-down-arrow:hover {
+  color: #960000;
+}
+
+/* Home Section Full Screen Slider */
+/* line 198, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slider-home {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  text-align: center;
+}
+
+/* line 206, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slides-text {
+  width: 38%;
+}
+
+/* line 210, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#slides {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 217, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#slides .slides-container {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  position: relative;
+  height: 100%;
+}
+
+/* line 225, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#slides .slides-container div {
+  position: relative;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* line 230, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#slides .slides-container .slide-1 {
+  background: url(/assets/headers/businessmen.jpg) center right;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  display: block;
+}
+
+/* line 241, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slides-navigation {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+/* line 248, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slides-navigation a {
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  opacity: 0;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  background: #000;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+}
+
+/* line 262, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slides-navigation a.prev {
+  left: 2%;
+  padding: 9px 0 0 16px;
+}
+
+/* line 263, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slides-navigation a.prev:before {
+  content: "\ab";
+}
+
+/* line 264, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slides-navigation a.next {
+  right: 2%;
+  padding: 9px 0 0 19px;
+}
+
+/* line 265, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slides-navigation a.next:before {
+  content: "\bb";
+}
+
+/* line 266, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#home:hover .slides-navigation a {
+  opacity: .3;
+}
+
+/* line 267, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.slides-navigation a:hover {
+  opacity: .8 !important;
+}
+
+/* Pattern Header */
+/* line 270, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.pattern {
+  background: #2f2f2f url(/assets/pattern-wood.jpg) left top repeat;
+}
+
+/* Video Header */
+/* line 273, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#video-header {
+  background: #000;
+}
+
+/* line 274, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.video-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/* line 281, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.header-mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/pattern-1.png) left top repeat;
+  z-index: 4;
+}
+
+/* --------------------------------
+Navigation Bar
+-------------------------------- */
+/* line 296, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.big-nav {
+  height: 72px;
+}
+
+/* line 299, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.small-nav {
+  height: 40px;
+}
+
+/* line 303, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.site-logo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  float: left;
+  position: relative;
+  text-transform: uppercase;
+  color: #111;
+  font-weight: 400;
+}
+
+/* line 312, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.big-nav .site-logo {
+  font-size: 32px;
+  top: 30%;
+}
+
+/* line 316, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.small-nav .site-logo {
+  font-size: 24px;
+  top: 20%;
+}
+
+/* line 323, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav li a.selected,
+.nav li a.current {
+  color: #960000 !important;
+}
+
+/* line 325, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#navigation {
+  border-bottom: 1px solid #eee;
+}
+
+/* line 330, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#navigation,
+#sub-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9998;
+  font-size: 12px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* line 340, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#navigation.big-nav {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 341, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#sub-navigation.big-nav {
+  background: white;
+}
+
+/* line 342, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#navigation.small-nav {
+  background: white;
+}
+
+/* line 344, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1170px;
+}
+
+/* line 350, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.mobile-nav-button {
+  display: none;
+  color: #960000;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 25px;
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 364, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.big-nav .mobile-nav-button {
+  top: 57%;
+}
+
+/* line 365, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.small-nav .mobile-nav-button {
+  top: 64%;
+}
+
+/* line 366, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.mobile-nav-button:hover {
+  color: #96000;
+}
+
+/* line 368, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav-menu {
+  position: relative;
+  float: right;
+  height: 100%;
+}
+
+/* line 373, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.big-nav .nav-menu {
+  top: 25%;
+}
+
+/* line 374, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.small-nav .nav-menu {
+  top: 5%;
+}
+
+/* line 376, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav li {
+  float: left;
+  position: relative;
+}
+
+/* line 380, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav li a {
+  display: block;
+  text-transform: uppercase;
+  color: #111;
+  font-weight: 700;
+  padding: 8px 12px;
+}
+
+/* line 387, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav li a:hover {
+  color: #960000;
+}
+
+/* Drop Down Navigation */
+/* line 392, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav li i {
+  margin-left: 3px;
+  font-size: 8px;
+  vertical-align: 10%;
+}
+
+/* line 397, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav ul {
+  margin: 20px 0 0 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  z-index: 1;
+  background: #2f2f2f;
+  transition: all .2s ease-in-out;
+}
+
+/* line 408, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+
+/* line 413, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav ul li {
+  float: none;
+  display: block;
+}
+
+/* line 417, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav ul a {
+  padding: 10px;
+  width: 100%;
+  min-width: 150px;
+  display: block;
+  white-space: nowrap;
+  float: none;
+}
+
+/* line 425, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav ul a:after {
+  content: "";
+}
+
+/* line 426, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.nav ul a:hover {
+  color: #2f2f2f;
+  background-color: rgba(108, 108, 108, 0.3);
+}
+
+/* --------------------------------
+Sub Page
+-------------------------------- */
+/* line 435, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.sub-page {
+  padding-top: 128px;
+}
+
+/* --------------------------------
+About Section
+-------------------------------- */
+/* line 441, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.about-item {
+  padding: 0 24px;
+}
+
+/* line 442, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.icon-btn {
+  color: #fff;
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 16px auto;
+  padding-top: 34px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+/* line 457, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.icon-btn:hover {
+  color: #fff;
+  background: #939393;
+}
+
+/* --------------------------------
+Testimonials
+-------------------------------- */
+/* line 466, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonials {
+  padding: 56px 0;
+  border-top: 1px dashed #b5b5b5;
+}
+
+/* line 471, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonial-slider {
+  max-width: 875px;
+  margin: 0 auto;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+/* line 477, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonial-slider li.t-slide {
+  position: absolute;
+  height: auto;
+}
+
+/* line 481, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonial-slider li.t-slide h4:before {
+  content: "\201c";
+}
+
+/* line 482, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonial-slider li.t-slide h4:after {
+  content: "\201d";
+}
+
+/* line 483, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonial-slider li.t-slide:last-child:after {
+  clear: both;
+}
+
+/* line 484, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.t-slide p {
+  font-size: 16px;
+}
+
+/* line 487, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.t-slide p {
+  display: inline-block;
+}
+
+/* line 490, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.t-slide p:before {
+  content: "\2013  ";
+}
+
+/* Testimonial Slider Controls */
+/* line 494, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonials .flex-direction-nav {
+  width: 0;
+  height: 24px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 501, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonials .flex-direction-nav li a {
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 24px;
+  text-shadow: none;
+  padding: 9px 0 0 0;
+  margin: 0;
+  line-height: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 516, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonials .flex-direction-nav li a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 519, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonials .flex-direction-nav li a.flex-prev:after {
+  content: "\ab";
+}
+
+/* line 522, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.testimonials .flex-direction-nav li a.flex-next:after {
+  content: "\bb";
+  padding-right: 6px;
+}
+
+/* --------------------------------
+Team Section
+-------------------------------- */
+/* line 532, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#team-slider {
+  width: 1200px;
+  margin: 24px auto 86px auto;
+}
+
+/* line 536, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #F8F8F8;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* line 545, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team-photo img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 554, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team:hover .team-photo img {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+/* line 561, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team h4 {
+  line-height: 24px;
+}
+
+/* line 562, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team h6 {
+  text-transform: uppercase;
+}
+
+/* line 564, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team-title {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
+  top: 305px;
+  background: #f8f8f8;
+  padding-top: 25px;
+  margin-bottom: 24px;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 579, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team:hover .team-title {
+  top: 30px;
+  padding-top: 0;
+}
+
+/* line 580, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team .team-info {
+  position: absolute;
+  z-index: 1;
+  left: 24px;
+  right: 24px;
+  top: 400px;
+  margin-bottom: 24px;
+  max-height: 280px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 596, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team:hover .team-info {
+  top: 105px;
+}
+
+/* line 597, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team .team-info p {
+  margin-bottom: 32px;
+}
+
+/* line 599, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team-social-links li {
+  display: inline-block;
+}
+
+/* line 600, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.team-social-links .social-btn {
+  background: #F8F8F8;
+}
+
+/* line 602, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.owl-buttons div {
+  opacity: 1 !important;
+}
+
+/* line 606, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.owl-next,
+.owl-prev {
+  visibility: hidden;
+}
+
+/* line 610, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.owl-next:after,
+.owl-prev:after {
+  visibility: visible;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #939393;
+  line-height: 0;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  font-size: 24px;
+  padding-top: 13px;
+  color: #fff;
+  content: "\203A";
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 630, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.owl-prev:after {
+  content: "\2039";
+}
+
+/* line 631, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.owl-next:after {
+  content: "\203A";
+}
+
+/* --------------------------------
+Call Out
+-------------------------------- */
+/* line 638, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.call-out a.button {
+  font-size: 21px;
+  margin-left: 16px;
+  padding: 16px 24px;
+}
+
+/* --------------------------------
+Services Section
+-------------------------------- */
+/* line 649, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#services {
+  background: url(/assets/parallax/chicago-skyline-darkcolored.jpg) left top fixed;
+  padding: 0 0 32px 0;
+  text-align: center;
+  overflow: hidden;
+  color: #b5b5b5;
+}
+
+/* line 658, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#services .container .row, #process .container .row {
+  margin: 56px 0;
+}
+
+/* line 661, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.service-item {
+  cursor: default;
+  padding: 0 24px;
+}
+
+/* line 665, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.service-item i {
+  margin-bottom: 8px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 671, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.service-item i {
+  color: #fff;
+}
+
+/* line 672, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.service-item:hover i {
+  color: #aaaaaa;
+}
+
+/* line 673, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.service-item h5 {
+  color: #fff;
+  line-height: 12px;
+}
+
+/* line 677, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.service-item .divider {
+  height: 2px;
+  display: block;
+  width: 25%;
+  margin: 16px auto;
+  background: #b5b5b5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* Mockup Sliders */
+/* line 689, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.mockup-tablet {
+  background: transparent;
+  width: 460px;
+  height: 580px;
+  padding-top: 59px;
+  padding-left: 1px;
+}
+
+/* line 696, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.mockup-tablet .owl-pagination {
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  width: 100%;
+  z-index: 20;
+}
+
+/* line 704, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.mockup-monitor {
+  background: url(/images/mockup-monitor.png) no-repeat;
+  width: 550px;
+  height: 466px;
+  padding-top: 30px;
+}
+
+/* line 710, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.mockup-monitor .owl-pagination {
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  width: 100%;
+  z-index: 20;
+}
+
+/* --------------------------------
+Portfolio Section
+-------------------------------- */
+/* line 723, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#portfolio {
+  height: auto;
+}
+
+/* line 724, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#portfolio-container {
+  height: auto;
+  padding: 20px 0 64px 0;
+}
+
+/* line 728, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#portfolio-title {
+  padding: 56px 0 20px 0 !important;
+}
+
+/* line 729, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#portfolio-title h4.subtitle {
+  margin-bottom: 0 !important;
+}
+
+/* line 731, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item {
+  width: 20%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 1px solid #f5f5f5;
+  border-left: 1px solid #fafafa;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 746, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 756, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* line 764, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item .mask {
+  position: absolute;
+  background: rgba(47, 47, 47, 0.05);
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+/* line 779, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item:hover .mask {
+  opacity: 1;
+}
+
+/* line 782, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item .mask a {
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+  color: #fff;
+}
+
+/* line 788, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item .mask a.zoom {
+  left: 40%;
+}
+
+/* line 789, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item .mask a.expander {
+  right: 40%;
+}
+
+/* line 790, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item h5 {
+  position: absolute;
+  bottom: 45%;
+  z-index: 100;
+  color: #111;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 798, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item p {
+  position: absolute;
+  bottom: 30%;
+  z-index: 100;
+  color: #aaa;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 807, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item:hover h5 {
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* Isotope Filter Styles */
+/* line 814, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.container.filter-menu {
+  padding: 24px 0 0 0;
+}
+
+/* line 818, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.option-set li {
+  display: inline-block;
+  margin: 0 8px 32px 0;
+}
+
+/* line 822, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.option-set li a {
+  padding: 4px 8px;
+  color: #6c6c6c;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #a4a4a4;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 835, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.option-set li a.selected,
+.option-set li a:hover {
+  color: #fff !important;
+  background: #6c6c6c;
+  border: 1px solid #6c6c6c;
+}
+
+/* Isotope styles */
+/* line 843, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.isotope-item {
+  z-index: 2;
+}
+
+/* line 844, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Isotope CSS3 transitions */
+/* line 852, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+
+/* line 860, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+/* line 868, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/* Disable Isotope CSS3 transitions */
+/* line 880, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+/* --------------------------------
+Portfolio Project Expander
+-------------------------------- */
+/* line 892, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.item-expander {
+  position: relative;
+  display: none;
+  width: 100%;
+  color: #fff;
+  background: #2f2f2f;
+  margin: 36px auto;
+}
+
+/* line 900, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#item-expander {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 907, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.portfolio-project {
+  padding: 16px 0 64px 0;
+}
+
+/* line 910, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.portfolio-project h4 {
+  color: #fff;
+}
+
+/* line 911, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.portfolio-project h5 {
+  color: #fff;
+  margin-top: 32px;
+}
+
+/* line 912, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.close-btn {
+  width: 100%;
+  padding: 0;
+  margin-top: 64px;
+  display: block;
+  height: auto;
+  text-align: right;
+}
+
+/* line 920, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.close-btn .close {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(/images/close-btn.png) center center no-repeat;
+  padding: 20px;
+  cursor: pointer;
+  opacity: .7;
+  border: 1px solid #3d3d3d;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 936, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.close-btn .close:hover {
+  background: #3d3d3d url(/images/close-btn.png) center center no-repeat;
+  opacity: 1;
+}
+
+/* line 940, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project div.project-slides div.slide img {
+  width: 100%;
+}
+
+/* Flex Slider Direction Nav */
+/* line 944, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project {
+  position: relative;
+  text-align: left;
+}
+
+/* line 948, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project ul.flex-direction-nav {
+  display: block;
+  opacity: 1;
+  width: 100% !important;
+}
+
+/* line 953, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project ul.flex-direction-nav li a {
+  position: absolute;
+  width: 32px;
+  height: 56px;
+  top: 46%;
+  opacity: 0.7;
+}
+
+/* line 960, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project ul.flex-direction-nav li a.flex-prev {
+  background: #2f2f2f url(/assets/arrow-left.png) center center no-repeat;
+  left: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* line 970, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project ul.flex-direction-nav li a.flex-next {
+  background: #2f2f2f url(/assets/arrow-right.png) center center no-repeat;
+  right: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 980, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project ul.flex-direction-nav li a:hover {
+  opacity: 1;
+}
+
+/* Flex Slider Control Nav */
+/* line 984, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ol.flex-control-nav {
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  z-index: 2;
+}
+
+/* line 990, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ol.flex-control-paging li a {
+  width: 8px;
+  height: 8px;
+  background: #2f2f2f;
+  background: rgba(47, 47, 47, 0.5);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 1000, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ol.flex-control-paging li a:hover {
+  background: #2f2f2f;
+  background: rgba(47, 47, 47, 0.7);
+}
+
+/* line 1004, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ol.flex-control-paging li a.flex-active {
+  background: #2f2f2f;
+  background: #2f2f2f;
+}
+
+/* Project Details */
+/* line 1011, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project-desc {
+  text-align: left;
+}
+
+/* line 1012, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project-details li {
+  padding: 8px 0;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+/* line 1016, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project-details li:last-child {
+  border-bottom: none;
+}
+
+/* line 1017, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.project-details li strong {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* --------------------------------
+Process Section
+-------------------------------- */
+/* line 1026, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#process {
+  background: #fff;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 1032, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.process-col {
+  color: #8e8e8e;
+  padding: 0 24px;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 1041, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.process-col .icon-box {
+  height: 64px;
+}
+
+/* line 1042, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.process-col i {
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 1049, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.process-col h5 {
+  color: #fff;
+}
+
+/* --------------------------------
+Strategy Section
+-------------------------------- */
+/* line 1055, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#strategy {
+  background: url(/assets/pattern-2.png) left top repeat, url(/assets/parallax/chicago-skyline-darkcolored.jpg) center center fixed;
+  padding: 0 0 32px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 1063, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#strategy .title {
+  color: #fff;
+}
+
+/* line 1064, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#strategy .subtitle {
+  color: #fff;
+}
+
+/* line 1065, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.process-col {
+  color: #8e8e8e;
+  padding: 0 24px;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 1074, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.process-col .icon-box {
+  height: 64px;
+}
+
+/* --------------------------------
+History Section
+-------------------------------- */
+/* line 1080, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#history h2 {
+  margin-bottom: 36px;
+}
+
+/* line 1081, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#history .columns {
+  padding: 0 24px;
+}
+
+/* --------------------------------
+Counters
+-------------------------------- */
+/* line 1087, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.count h1 {
+  font-size: 56px;
+}
+
+/* --------------------------------
+Pricing Tables
+-------------------------------- */
+/* line 1093, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table {
+  background: #E8E8E8;
+}
+
+/* line 1096, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table:hover h4, .price-table h4.selected {
+  color: #960000;
+}
+
+/* line 1099, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table h4 {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #2f2f2f;
+  color: #fff;
+  padding: 16px 0;
+  margin: 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 1111, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 1116, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table h4:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(47, 47, 47, 0);
+  border-top-color: #2f2f2f;
+  border-width: 16px;
+  margin-left: -16px;
+}
+
+/* line 1130, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table-container {
+  padding: 24px;
+}
+
+/* line 1131, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  margin: 8px 0 24px 0;
+  font-weight: 400;
+}
+
+/* line 1138, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price span.dollar {
+  vertical-align: super;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* line 1143, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table p {
+  font-size: 14px;
+}
+
+/* line 1144, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table ul {
+  margin-top: 16px;
+}
+
+/* line 1145, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table ul li {
+  border-bottom: 1px dashed #C4C4C4;
+  padding: 8px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: default;
+}
+
+/* line 1152, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.price-table ul li:last-child {
+  border-bottom: none;
+}
+
+/* line 1153, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.price-button {
+  background: #6c6c6c;
+  color: #fff;
+  width: 100%;
+  display: block;
+  padding: 16px 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* line 1162, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.price-button:hover, a.price-button.selected {
+  background: #2f2f2f;
+  color: #960000;
+}
+
+/* --------------------------------
+Accordion
+-------------------------------- */
+/* line 1172, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#accordion img.mockup {
+  width: 425px;
+}
+
+/* line 1174, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.accordion {
+  background: url(/assets/pattern-2.png) left top repeat, url(/assets/parallax/parallax-bg-4.jpg) center center fixed;
+}
+
+/* line 1179, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.accordion-container {
+  text-align: left;
+}
+
+/* line 1180, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.accordion-button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 16px 0 0 0;
+  border: 1px solid #d0d0d0;
+  padding: 8px;
+}
+
+/* line 1190, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.accordion-button:hover {
+  color: #960000;
+}
+
+/* line 1191, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.accordion-button i {
+  margin-right: 8px;
+}
+
+/* line 1192, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.accordion-button i.fa-arrow-circle-o-down {
+  color: #960000;
+}
+
+/* line 1193, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.accordion-content {
+  border-left: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+/* --------------------------------
+Timeline
+-------------------------------- */
+/* line 1207, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.timeline,
+.timeline .timeline-item {
+  width: 100%;
+}
+
+/* line 1209, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.timeline .timeline-item .info,
+.timeline .timeline-item .year {
+  color: #ededed;
+  float: left;
+  display: block;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 1218, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.timeline .timeline-item.close .info,
+.timeline .timeline-item.close .year {
+  color: #c8c8c8;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 1224, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.timeline .timeline-item .year {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  width: 25%;
+}
+
+/* line 1230, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.timeline .timeline-item .info {
+  width: 75%;
+  margin-left: 0px;
+  padding: 0 0 42px 36px;
+  border-left: 5px solid #939393;
+}
+
+/* line 1236, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.timeline .timeline-item .marker {
+  background-color: #fff;
+  border: 4px solid #939393;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  display: block;
+  float: right;
+  margin-right: -13px;
+  z-index: 2000;
+  position: relative;
+}
+
+/* line 1249, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.timeline .timeline-item.active .info,
+.timeline .timeline-item:hover .info {
+  color: #939393;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 1256, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.timeline .timeline-item .marker .dot {
+  background-color: white;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+  display: block;
+  border: 2px solid white;
+  height: 12px;
+  width: 12px;
+  border-radius: 100px;
+  float: right;
+  z-index: 2000;
+  position: relative;
+}
+
+/* line 1271, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.timeline .timeline-item.active .marker .dot,
+.timeline .timeline-item:hover .marker .dot {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* --------------------------------
+Percentage Bars (Skill Bars)
+-------------------------------- */
+/* line 1282, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.skillbar, .modal-skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 16px;
+  width: 100%;
+  background: #eee;
+  height: 24px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+/* line 1304, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #960000;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 1321, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 24px;
+  line-height: 24px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 1335, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.skillbar-bar {
+  height: 24px;
+  width: 0px;
+  background: #960000;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/* line 1344, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* --------------------------------
+Gauges
+-------------------------------- */
+/* line 1359, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#guage1, #guage2, #guage3, #guage4, #guage5, #guage6 {
+  width: 200px;
+  height: 160px;
+  display: inline-block;
+  margin: 1em;
+}
+
+/* --------------------------------
+Video Section
+-------------------------------- */
+/* line 1369, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.full-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 720px;
+  background: black;
+  padding-top: 300px;
+}
+
+/* line 1377, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.full-video:after {
+  background: rgba(255, 255, 255, 0.7) url(/assets/pattern-1.png) repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1388, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.video-msg {
+  z-index: 2;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 1395, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.video-msg h1 {
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+/* --------------------------------
+Blog
+-------------------------------- */
+/* line 1404, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-preview {
+  text-align: left;
+  padding: 0 24px;
+}
+
+/* line 1408, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* line 1412, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-meta {
+  margin: 8px 0 16px 0;
+}
+
+/* line 1413, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-meta li {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6c6c6c;
+  margin-right: 8px;
+}
+
+/* line 1420, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-meta li a {
+  color: #6c6c6c;
+}
+
+/* line 1421, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-meta li i {
+  margin-right: 4px;
+}
+
+/* line 1423, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 16px;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 1435, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 1445, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 1452, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img .mask {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+/* line 1467, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img:hover .mask {
+  opacity: 1;
+}
+
+/* line 1470, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img i {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-left: -15px;
+  z-index: 100;
+  color: #fff;
+}
+
+/* line 1478, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img-lrg i {
+  top: 50%;
+  margin-top: -15px;
+}
+
+/* line 1482, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img h5 {
+  position: absolute;
+  bottom: -100px;
+  z-index: 100;
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+/* line 1496, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img:hover h5 {
+  bottom: 10px;
+  opacity: 1;
+}
+
+/* line 1500, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.post-img-lrg:hover h5 {
+  bottom: 30px;
+}
+
+/* line 1503, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.full-blog-link {
+  display: block;
+  clear: both;
+  padding-top: 48px;
+}
+
+/* Blog Pages */
+/* line 1511, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+article.blog-post {
+  padding-bottom: 32px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(108, 108, 108, 0.2);
+}
+
+/* line 1516, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.sub-page article.blog-post:last-child {
+  border-bottom: none;
+}
+
+/* line 1518, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+section.sidebar-content {
+  margin-bottom: 48px;
+}
+
+/* line 1522, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ul.blog-categories li {
+  border-bottom: 1px solid rgba(108, 108, 108, 0.2);
+}
+
+/* line 1525, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ul.blog-categories li a {
+  display: block;
+  padding: 16px 8px;
+  color: #2f2f2f;
+}
+
+/* line 1530, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ul.blog-categories li a:before {
+  content: "\203A";
+  font-weight: 400;
+  margin-right: 8px;
+}
+
+/* line 1535, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ul.blog-categories li a:hover {
+  color: #fff;
+  background: #2f2f2f;
+}
+
+/* line 1539, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.blog-tag {
+  display: inline-block;
+  background: #ecf0f1;
+  padding: 4px 8px;
+  margin: 4px;
+  color: #2f2f2f;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 1549, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.blog-tag:hover {
+  color: #fff;
+  background: #2f2f2f;
+}
+
+/* line 1553, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ul.content-list {
+  margin: 16px;
+}
+
+/* line 1554, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ul.content-list li {
+  padding: 4px;
+}
+
+/* line 1557, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ul.content-list li:before {
+  content: "\203A";
+  margin-right: 8px;
+}
+
+/* line 1561, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.about-author {
+  padding: 0 0 32px 0;
+  border-bottom: 1px solid rgba(108, 108, 108, 0.2);
+}
+
+/* line 1565, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.comments {
+  padding-top: 32px;
+}
+
+/* line 1566, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ul.comment-list li {
+  position: relative;
+  padding: 32px 0 32px 80px;
+  border-bottom: 1px solid rgba(108, 108, 108, 0.2);
+}
+
+/* line 1571, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+ul.comment-list li:last-child {
+  border-bottom: none;
+}
+
+/* line 1572, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.comment-author {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* line 1578, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+img.comment-avatar {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 64px;
+  height: 64px;
+}
+
+/* line 1585, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.comment-date {
+  display: block;
+  font-style: italic;
+}
+
+/* --------------------------------
+Clients Section
+-------------------------------- */
+/* line 1593, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.clients {
+  background: url(/assets/pattern-2.png) left top repeat, url(/assets/parallax/parallax-bg-3.jpg) center center fixed;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 1601, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.clients .subtle-header {
+  font-style: italic;
+  color: #ddd;
+  font-weight: 300;
+  font-size: 18px;
+  padding-top: 40px;
+  margin-bottom: -20px;
+}
+
+/* line 1609, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.clients .subtitle {
+  color: #fff;
+}
+
+/* line 1610, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#client-slider {
+  width: 1200px;
+  margin: 64px auto 56px auto;
+}
+
+/* line 1614, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#client-slider .client-item {
+  width: 130px;
+}
+
+/* line 1615, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.clients img {
+  opacity: .5;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 1628, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.clients img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* --------------------------------
+Featured Projects Section
+-------------------------------- */
+/* line 1641, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.featured {
+  background: url(/assets/pattern-1.png) left top repeat, url(/assets/parallax/parallax-bg-4.jpg) center center fixed;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 1649, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#featured-title {
+  padding: 56px 0 20px 0 !important;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 1655, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#featured-title .subtitle {
+  color: #fff;
+}
+
+/* line 1656, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#work-slider {
+  width: 100%;
+  margin: 0 auto 56px auto;
+}
+
+/* line 1660, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#work-slider .work-item {
+  width: 95%;
+  position: relative;
+}
+
+/* line 1664, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#work-slider .work-item img {
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* line 1673, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#work-slider .work-item .zoom {
+  position: absolute;
+  background: rgba(216, 216, 216, 0.9);
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  color: #292929;
+  margin: -30px 0 0 -30px;
+  padding-top: 16px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* line 1688, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#work-slider .work-item:hover .zoom {
+  opacity: 1;
+}
+
+/* line 1691, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#work-slider .work-item .zoom:hover {
+  background: rgba(40, 40, 40, 0.9);
+}
+
+/* line 1695, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#featured .owl-next:after,
+#featured .owl-prev:after {
+  background: #292929;
+}
+
+/* --------------------------------
+Contact Section
+-------------------------------- */
+/* line 1705, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  border: 1px solid rgba(47, 47, 47, 0.3);
+  color: #6c6c6c !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 1716, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.contact-form textarea {
+  height: 209px;
+  max-height: 209px;
+}
+
+/* line 1721, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid rgba(47, 47, 47, 0.6);
+  color: #2f2f2f;
+  background: rgba(47, 47, 47, 0.1);
+}
+
+/* line 1728, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.contact-form input:hover,
+.contact-form textarea:hover {
+  background: rgba(47, 47, 47, 0.1);
+}
+
+/* line 1731, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+button#submit {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #960000;
+  font-size: 16px;
+  display: inline-block;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: 1px solid #960000;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 1747, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+button#submit:hover {
+  background: #6c6c6c;
+  border: 1px solid #6c6c6c;
+}
+
+/* line 1751, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+button#submit:focus {
+  outline: none;
+}
+
+/* Contact Form Messages */
+/* line 1757, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.error-container {
+  display: block;
+  margin-bottom: 24px;
+}
+
+/* line 1761, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.error {
+  color: #960000;
+  display: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* line 1768, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.success {
+  color: #27ae60;
+  display: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* --------------------------------
+Google Map
+-------------------------------- */
+/* line 1780, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#map {
+  border-bottom: 1px solid rgba(108, 108, 108, 0.4);
+}
+
+/* line 1781, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#google-map {
+  position: relative;
+  opacity: .9;
+  width: 100%;
+  height: 400px;
+  -webkit-filter: grayscale(95%);
+  -moz-filter: grayscale(95%);
+  -ms-filter: grayscale(95%);
+  -o-filter: grayscale(95%);
+  filter: grayscale(95%);
+  filter: url(/assets/grayscale.svg#greyscale);
+  filter: gray;
+  /* IE 6-9 */
+}
+
+/* line 1795, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#map-tooltip {
+  padding-top: 24px;
+  text-align: center;
+}
+
+/* line 1799, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#map-tooltip h5 {
+  margin-bottom: 0;
+  line-height: 16px;
+}
+
+/* line 1803, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#map .callout {
+  background: #2f2f2f;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* line 1808, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#map .callout .container {
+  padding: 16px 0;
+}
+
+/* -------------------------------
+Job Form
+---------------------------------*/
+/* line 1813, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#job .callout {
+  background: url(/assets/pattern-2.png) left top repeat, url(/assets/parallax/chicago-skyline-darkcolored.jpg) center center fixed;
+  padding: 40px 0 0 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 1821, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#job .title {
+  color: #fff;
+}
+
+/* line 1822, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#job .subtitle {
+  color: #fff;
+}
+
+/* --------------------------------
+Social Media
+-------------------------------- */
+/* line 1827, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.social .social-links {
+  margin-bottom: 24px;
+}
+
+/* line 1828, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.social .social-links li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+/* line 1832, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.social .social-links li a {
+  display: block;
+  padding: 12px 0;
+  margin: 4px 0;
+  width: 48px;
+  height: 48px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 1843, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.text-section p {
+  font-size: 18px;
+}
+
+/* --------------------------------
+Extras
+-------------------------------- */
+/* line 1851, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.red-bar {
+  color: #960000 !important;
+}
+
+/* --------------------------------
+Footer
+-------------------------------- */
+/* line 1860, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#footer-bottom {
+  position: relative;
+  background: #222;
+  color: #fff;
+}
+
+/* line 1865, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#footer-bottom a {
+  color: #aaa !important;
+}
+
+/* line 1868, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#footer-bottom .container {
+  padding: 24px 0;
+}
+
+/* line 1869, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+#footer-bottom h2 {
+  color: #fff;
+}
+
+/* line 1870, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.button-to-top {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  padding: 4px 0;
+  width: 32px;
+  height: 32px;
+  background: #222;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 1885, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+a.button-to-top:hover {
+  color: #960000;
+}
+/*!
+ *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(/assets/fontawesome-webfont.eot?v=4.1.0);
+  src: url(/assets/fontawesome-webfont.eot?#iefix&v=4.1.0) format("embedded-opentype"), url(/assets/fontawesome-webfont.woff?v=4.1.0) format("woff"), url(/assets/fontawesome-webfont.ttf?v=4.1.0) format("truetype"), url(/assets/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 15, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 25, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 30, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 33, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 36, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 39, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 42, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+/* line 46, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+
+/* line 51, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 54, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+
+/* line 61, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+
+/* line 64, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+
+/* line 69, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 72, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 75, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+
+/* line 78, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 81, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 88, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 91, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 96, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 99, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 104, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 107, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  /* line 112, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 116, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+/* line 121, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 129, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 137, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 145, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 153, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 161, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 170, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 176, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 179, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 182, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-inverse {
+  color: #ffffff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 187, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-glass:before {
+  content: "\f000";
+}
+
+/* line 190, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-music:before {
+  content: "\f001";
+}
+
+/* line 193, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-search:before {
+  content: "\f002";
+}
+
+/* line 196, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+/* line 199, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-heart:before {
+  content: "\f004";
+}
+
+/* line 202, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 205, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-star-o:before {
+  content: "\f006";
+}
+
+/* line 208, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-user:before {
+  content: "\f007";
+}
+
+/* line 211, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-film:before {
+  content: "\f008";
+}
+
+/* line 214, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-th-large:before {
+  content: "\f009";
+}
+
+/* line 217, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-th:before {
+  content: "\f00a";
+}
+
+/* line 220, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+/* line 223, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-check:before {
+  content: "\f00c";
+}
+
+/* line 226, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-times:before {
+  content: "\f00d";
+}
+
+/* line 229, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-search-plus:before {
+  content: "\f00e";
+}
+
+/* line 232, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-search-minus:before {
+  content: "\f010";
+}
+
+/* line 235, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-power-off:before {
+  content: "\f011";
+}
+
+/* line 238, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-signal:before {
+  content: "\f012";
+}
+
+/* line 242, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013";
+}
+
+/* line 245, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-trash-o:before {
+  content: "\f014";
+}
+
+/* line 248, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-home:before {
+  content: "\f015";
+}
+
+/* line 251, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-o:before {
+  content: "\f016";
+}
+
+/* line 254, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+/* line 257, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-road:before {
+  content: "\f018";
+}
+
+/* line 260, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-download:before {
+  content: "\f019";
+}
+
+/* line 263, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+
+/* line 266, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+
+/* line 269, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-inbox:before {
+  content: "\f01c";
+}
+
+/* line 272, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+
+/* line 276, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e";
+}
+
+/* line 279, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-refresh:before {
+  content: "\f021";
+}
+
+/* line 282, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-list-alt:before {
+  content: "\f022";
+}
+
+/* line 285, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-lock:before {
+  content: "\f023";
+}
+
+/* line 288, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-flag:before {
+  content: "\f024";
+}
+
+/* line 291, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-headphones:before {
+  content: "\f025";
+}
+
+/* line 294, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-volume-off:before {
+  content: "\f026";
+}
+
+/* line 297, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-volume-down:before {
+  content: "\f027";
+}
+
+/* line 300, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-volume-up:before {
+  content: "\f028";
+}
+
+/* line 303, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-qrcode:before {
+  content: "\f029";
+}
+
+/* line 306, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-barcode:before {
+  content: "\f02a";
+}
+
+/* line 309, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-tag:before {
+  content: "\f02b";
+}
+
+/* line 312, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-tags:before {
+  content: "\f02c";
+}
+
+/* line 315, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-book:before {
+  content: "\f02d";
+}
+
+/* line 318, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 321, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-print:before {
+  content: "\f02f";
+}
+
+/* line 324, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-camera:before {
+  content: "\f030";
+}
+
+/* line 327, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-font:before {
+  content: "\f031";
+}
+
+/* line 330, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bold:before {
+  content: "\f032";
+}
+
+/* line 333, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-italic:before {
+  content: "\f033";
+}
+
+/* line 336, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-text-height:before {
+  content: "\f034";
+}
+
+/* line 339, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-text-width:before {
+  content: "\f035";
+}
+
+/* line 342, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-align-left:before {
+  content: "\f036";
+}
+
+/* line 345, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-align-center:before {
+  content: "\f037";
+}
+
+/* line 348, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-align-right:before {
+  content: "\f038";
+}
+
+/* line 351, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-align-justify:before {
+  content: "\f039";
+}
+
+/* line 354, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-list:before {
+  content: "\f03a";
+}
+
+/* line 358, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b";
+}
+
+/* line 361, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-indent:before {
+  content: "\f03c";
+}
+
+/* line 364, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-video-camera:before {
+  content: "\f03d";
+}
+
+/* line 369, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "\f03e";
+}
+
+/* line 372, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-pencil:before {
+  content: "\f040";
+}
+
+/* line 375, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+/* line 378, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-adjust:before {
+  content: "\f042";
+}
+
+/* line 381, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-tint:before {
+  content: "\f043";
+}
+
+/* line 385, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+/* line 388, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-share-square-o:before {
+  content: "\f045";
+}
+
+/* line 391, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-check-square-o:before {
+  content: "\f046";
+}
+
+/* line 394, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrows:before {
+  content: "\f047";
+}
+
+/* line 397, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-step-backward:before {
+  content: "\f048";
+}
+
+/* line 400, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 403, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-backward:before {
+  content: "\f04a";
+}
+
+/* line 406, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-play:before {
+  content: "\f04b";
+}
+
+/* line 409, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-pause:before {
+  content: "\f04c";
+}
+
+/* line 412, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stop:before {
+  content: "\f04d";
+}
+
+/* line 415, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-forward:before {
+  content: "\f04e";
+}
+
+/* line 418, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 421, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-step-forward:before {
+  content: "\f051";
+}
+
+/* line 424, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-eject:before {
+  content: "\f052";
+}
+
+/* line 427, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 430, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 433, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-plus-circle:before {
+  content: "\f055";
+}
+
+/* line 436, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-minus-circle:before {
+  content: "\f056";
+}
+
+/* line 439, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+/* line 442, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-check-circle:before {
+  content: "\f058";
+}
+
+/* line 445, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-question-circle:before {
+  content: "\f059";
+}
+
+/* line 448, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+/* line 451, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+
+/* line 454, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+
+/* line 457, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+
+/* line 460, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ban:before {
+  content: "\f05e";
+}
+
+/* line 463, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 466, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 469, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 472, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 476, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064";
+}
+
+/* line 479, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-expand:before {
+  content: "\f065";
+}
+
+/* line 482, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-compress:before {
+  content: "\f066";
+}
+
+/* line 485, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-plus:before {
+  content: "\f067";
+}
+
+/* line 488, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-minus:before {
+  content: "\f068";
+}
+
+/* line 491, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-asterisk:before {
+  content: "\f069";
+}
+
+/* line 494, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+
+/* line 497, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-gift:before {
+  content: "\f06b";
+}
+
+/* line 500, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-leaf:before {
+  content: "\f06c";
+}
+
+/* line 503, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-fire:before {
+  content: "\f06d";
+}
+
+/* line 506, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-eye:before {
+  content: "\f06e";
+}
+
+/* line 509, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-eye-slash:before {
+  content: "\f070";
+}
+
+/* line 513, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071";
+}
+
+/* line 516, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-plane:before {
+  content: "\f072";
+}
+
+/* line 519, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-calendar:before {
+  content: "\f073";
+}
+
+/* line 522, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-random:before {
+  content: "\f074";
+}
+
+/* line 525, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-comment:before {
+  content: "\f075";
+}
+
+/* line 528, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-magnet:before {
+  content: "\f076";
+}
+
+/* line 531, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 534, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 537, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-retweet:before {
+  content: "\f079";
+}
+
+/* line 540, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 543, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-folder:before {
+  content: "\f07b";
+}
+
+/* line 546, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 549, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+
+/* line 552, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+
+/* line 555, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bar-chart-o:before {
+  content: "\f080";
+}
+
+/* line 558, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 561, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 564, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 567, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-key:before {
+  content: "\f084";
+}
+
+/* line 571, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085";
+}
+
+/* line 574, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-comments:before {
+  content: "\f086";
+}
+
+/* line 577, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* line 580, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+
+/* line 583, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-star-half:before {
+  content: "\f089";
+}
+
+/* line 586, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-heart-o:before {
+  content: "\f08a";
+}
+
+/* line 589, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+/* line 592, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+/* line 595, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+
+/* line 598, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-external-link:before {
+  content: "\f08e";
+}
+
+/* line 601, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sign-in:before {
+  content: "\f090";
+}
+
+/* line 604, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-trophy:before {
+  content: "\f091";
+}
+
+/* line 607, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-github-square:before {
+  content: "\f092";
+}
+
+/* line 610, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-upload:before {
+  content: "\f093";
+}
+
+/* line 613, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-lemon-o:before {
+  content: "\f094";
+}
+
+/* line 616, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/* line 619, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-square-o:before {
+  content: "\f096";
+}
+
+/* line 622, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+
+/* line 625, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-phone-square:before {
+  content: "\f098";
+}
+
+/* line 628, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* line 631, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+/* line 634, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-github:before {
+  content: "\f09b";
+}
+
+/* line 637, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-unlock:before {
+  content: "\f09c";
+}
+
+/* line 640, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 643, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-rss:before {
+  content: "\f09e";
+}
+
+/* line 646, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+
+/* line 649, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 652, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+/* line 655, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 658, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+
+/* line 661, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+
+/* line 664, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+
+/* line 667, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+
+/* line 670, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+
+/* line 673, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+
+/* line 676, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+
+/* line 679, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+
+/* line 682, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+/* line 685, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 688, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 691, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-filter:before {
+  content: "\f0b0";
+}
+
+/* line 694, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 697, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+
+/* line 701, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0";
+}
+
+/* line 705, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1";
+}
+
+/* line 708, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 711, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-flask:before {
+  content: "\f0c3";
+}
+
+/* line 715, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4";
+}
+
+/* line 719, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5";
+}
+
+/* line 722, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+
+/* line 726, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7";
+}
+
+/* line 729, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-square:before {
+  content: "\f0c8";
+}
+
+/* line 734, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+/* line 737, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 740, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 743, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 746, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-underline:before {
+  content: "\f0cd";
+}
+
+/* line 749, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-table:before {
+  content: "\f0ce";
+}
+
+/* line 752, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-magic:before {
+  content: "\f0d0";
+}
+
+/* line 755, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+/* line 758, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 761, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+
+/* line 764, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+/* line 767, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 770, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-money:before {
+  content: "\f0d6";
+}
+
+/* line 773, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 776, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 779, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 782, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 785, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-columns:before {
+  content: "\f0db";
+}
+
+/* line 789, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc";
+}
+
+/* line 793, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "\f0dd";
+}
+
+/* line 797, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "\f0de";
+}
+
+/* line 800, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/* line 803, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 807, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2";
+}
+
+/* line 811, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3";
+}
+
+/* line 815, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4";
+}
+
+/* line 818, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+
+/* line 821, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+
+/* line 825, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 828, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 831, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 835, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea";
+}
+
+/* line 838, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+
+/* line 841, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+/* line 844, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+
+/* line 847, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+
+/* line 850, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-user-md:before {
+  content: "\f0f0";
+}
+
+/* line 853, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+
+/* line 856, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+
+/* line 859, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+
+/* line 862, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-coffee:before {
+  content: "\f0f4";
+}
+
+/* line 865, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+
+/* line 868, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+
+/* line 871, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-building-o:before {
+  content: "\f0f7";
+}
+
+/* line 874, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+
+/* line 877, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+
+/* line 880, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-medkit:before {
+  content: "\f0fa";
+}
+
+/* line 883, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+
+/* line 886, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-beer:before {
+  content: "\f0fc";
+}
+
+/* line 889, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-h-square:before {
+  content: "\f0fd";
+}
+
+/* line 892, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+
+/* line 895, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+
+/* line 898, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+
+/* line 901, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+
+/* line 904, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+
+/* line 907, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+/* line 910, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+/* line 913, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/* line 916, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+/* line 919, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-desktop:before {
+  content: "\f108";
+}
+
+/* line 922, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-laptop:before {
+  content: "\f109";
+}
+
+/* line 925, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-tablet:before {
+  content: "\f10a";
+}
+
+/* line 929, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+
+/* line 932, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-circle-o:before {
+  content: "\f10c";
+}
+
+/* line 935, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 938, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-quote-right:before {
+  content: "\f10e";
+}
+
+/* line 941, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-spinner:before {
+  content: "\f110";
+}
+
+/* line 944, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-circle:before {
+  content: "\f111";
+}
+
+/* line 948, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112";
+}
+
+/* line 951, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-github-alt:before {
+  content: "\f113";
+}
+
+/* line 954, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-folder-o:before {
+  content: "\f114";
+}
+
+/* line 957, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+
+/* line 960, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-smile-o:before {
+  content: "\f118";
+}
+
+/* line 963, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-frown-o:before {
+  content: "\f119";
+}
+
+/* line 966, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-meh-o:before {
+  content: "\f11a";
+}
+
+/* line 969, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-gamepad:before {
+  content: "\f11b";
+}
+
+/* line 972, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+
+/* line 975, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-flag-o:before {
+  content: "\f11d";
+}
+
+/* line 978, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+
+/* line 981, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-terminal:before {
+  content: "\f120";
+}
+
+/* line 984, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-code:before {
+  content: "\f121";
+}
+
+/* line 988, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "\f122";
+}
+
+/* line 993, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123";
+}
+
+/* line 996, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-location-arrow:before {
+  content: "\f124";
+}
+
+/* line 999, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-crop:before {
+  content: "\f125";
+}
+
+/* line 1002, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-code-fork:before {
+  content: "\f126";
+}
+
+/* line 1006, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127";
+}
+
+/* line 1009, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-question:before {
+  content: "\f128";
+}
+
+/* line 1012, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-info:before {
+  content: "\f129";
+}
+
+/* line 1015, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-exclamation:before {
+  content: "\f12a";
+}
+
+/* line 1018, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-superscript:before {
+  content: "\f12b";
+}
+
+/* line 1021, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-subscript:before {
+  content: "\f12c";
+}
+
+/* line 1024, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-eraser:before {
+  content: "\f12d";
+}
+
+/* line 1027, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+
+/* line 1030, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-microphone:before {
+  content: "\f130";
+}
+
+/* line 1033, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+
+/* line 1036, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-shield:before {
+  content: "\f132";
+}
+
+/* line 1039, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-calendar-o:before {
+  content: "\f133";
+}
+
+/* line 1042, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+
+/* line 1045, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-rocket:before {
+  content: "\f135";
+}
+
+/* line 1048, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-maxcdn:before {
+  content: "\f136";
+}
+
+/* line 1051, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+
+/* line 1054, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+
+/* line 1057, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+
+/* line 1060, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+
+/* line 1063, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-html5:before {
+  content: "\f13b";
+}
+
+/* line 1066, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-css3:before {
+  content: "\f13c";
+}
+
+/* line 1069, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-anchor:before {
+  content: "\f13d";
+}
+
+/* line 1072, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+
+/* line 1075, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bullseye:before {
+  content: "\f140";
+}
+
+/* line 1078, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+
+/* line 1081, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+
+/* line 1084, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-rss-square:before {
+  content: "\f143";
+}
+
+/* line 1087, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-play-circle:before {
+  content: "\f144";
+}
+
+/* line 1090, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ticket:before {
+  content: "\f145";
+}
+
+/* line 1093, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-minus-square:before {
+  content: "\f146";
+}
+
+/* line 1096, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+
+/* line 1099, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-level-up:before {
+  content: "\f148";
+}
+
+/* line 1102, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-level-down:before {
+  content: "\f149";
+}
+
+/* line 1105, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+/* line 1108, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+
+/* line 1111, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+
+/* line 1114, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-share-square:before {
+  content: "\f14d";
+}
+
+/* line 1117, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-compass:before {
+  content: "\f14e";
+}
+
+/* line 1121, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150";
+}
+
+/* line 1125, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151";
+}
+
+/* line 1129, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152";
+}
+
+/* line 1133, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153";
+}
+
+/* line 1136, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-gbp:before {
+  content: "\f154";
+}
+
+/* line 1140, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155";
+}
+
+/* line 1144, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156";
+}
+
+/* line 1150, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157";
+}
+
+/* line 1155, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158";
+}
+
+/* line 1159, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159";
+}
+
+/* line 1163, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a";
+}
+
+/* line 1166, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file:before {
+  content: "\f15b";
+}
+
+/* line 1169, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+/* line 1172, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+
+/* line 1175, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+
+/* line 1178, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+
+/* line 1181, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+
+/* line 1184, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+
+/* line 1187, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+
+/* line 1190, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+/* line 1193, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+
+/* line 1196, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-youtube-square:before {
+  content: "\f166";
+}
+
+/* line 1199, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+/* line 1202, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-xing:before {
+  content: "\f168";
+}
+
+/* line 1205, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-xing-square:before {
+  content: "\f169";
+}
+
+/* line 1208, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+
+/* line 1211, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-dropbox:before {
+  content: "\f16b";
+}
+
+/* line 1214, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+
+/* line 1217, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+/* line 1220, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-flickr:before {
+  content: "\f16e";
+}
+
+/* line 1223, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-adn:before {
+  content: "\f170";
+}
+
+/* line 1226, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bitbucket:before {
+  content: "\f171";
+}
+
+/* line 1229, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+
+/* line 1232, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-tumblr:before {
+  content: "\f173";
+}
+
+/* line 1235, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+
+/* line 1238, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+
+/* line 1241, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+
+/* line 1244, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+
+/* line 1247, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+
+/* line 1250, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-apple:before {
+  content: "\f179";
+}
+
+/* line 1253, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-windows:before {
+  content: "\f17a";
+}
+
+/* line 1256, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-android:before {
+  content: "\f17b";
+}
+
+/* line 1259, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-linux:before {
+  content: "\f17c";
+}
+
+/* line 1262, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+/* line 1265, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-skype:before {
+  content: "\f17e";
+}
+
+/* line 1268, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-foursquare:before {
+  content: "\f180";
+}
+
+/* line 1271, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-trello:before {
+  content: "\f181";
+}
+
+/* line 1274, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-female:before {
+  content: "\f182";
+}
+
+/* line 1277, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-male:before {
+  content: "\f183";
+}
+
+/* line 1280, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-gittip:before {
+  content: "\f184";
+}
+
+/* line 1283, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sun-o:before {
+  content: "\f185";
+}
+
+/* line 1286, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-moon-o:before {
+  content: "\f186";
+}
+
+/* line 1289, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-archive:before {
+  content: "\f187";
+}
+
+/* line 1292, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bug:before {
+  content: "\f188";
+}
+
+/* line 1295, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-vk:before {
+  content: "\f189";
+}
+
+/* line 1298, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-weibo:before {
+  content: "\f18a";
+}
+
+/* line 1301, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-renren:before {
+  content: "\f18b";
+}
+
+/* line 1304, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-pagelines:before {
+  content: "\f18c";
+}
+
+/* line 1307, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+
+/* line 1310, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+
+/* line 1313, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+
+/* line 1317, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191";
+}
+
+/* line 1320, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+
+/* line 1323, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-wheelchair:before {
+  content: "\f193";
+}
+
+/* line 1326, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+
+/* line 1330, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195";
+}
+
+/* line 1333, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+
+/* line 1336, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-space-shuttle:before {
+  content: "\f197";
+}
+
+/* line 1339, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-slack:before {
+  content: "\f198";
+}
+
+/* line 1342, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-envelope-square:before {
+  content: "\f199";
+}
+
+/* line 1345, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-wordpress:before {
+  content: "\f19a";
+}
+
+/* line 1348, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-openid:before {
+  content: "\f19b";
+}
+
+/* line 1353, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "\f19c";
+}
+
+/* line 1357, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\f19d";
+}
+
+/* line 1360, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-yahoo:before {
+  content: "\f19e";
+}
+
+/* line 1363, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-google:before {
+  content: "\f1a0";
+}
+
+/* line 1366, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-reddit:before {
+  content: "\f1a1";
+}
+
+/* line 1369, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-reddit-square:before {
+  content: "\f1a2";
+}
+
+/* line 1372, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+
+/* line 1375, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-stumbleupon:before {
+  content: "\f1a4";
+}
+
+/* line 1378, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-delicious:before {
+  content: "\f1a5";
+}
+
+/* line 1381, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-digg:before {
+  content: "\f1a6";
+}
+
+/* line 1385, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-pied-piper-square:before,
+.fa-pied-piper:before {
+  content: "\f1a7";
+}
+
+/* line 1388, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-pied-piper-alt:before {
+  content: "\f1a8";
+}
+
+/* line 1391, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-drupal:before {
+  content: "\f1a9";
+}
+
+/* line 1394, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-joomla:before {
+  content: "\f1aa";
+}
+
+/* line 1397, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-language:before {
+  content: "\f1ab";
+}
+
+/* line 1400, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-fax:before {
+  content: "\f1ac";
+}
+
+/* line 1403, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-building:before {
+  content: "\f1ad";
+}
+
+/* line 1406, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-child:before {
+  content: "\f1ae";
+}
+
+/* line 1409, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-paw:before {
+  content: "\f1b0";
+}
+
+/* line 1412, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-spoon:before {
+  content: "\f1b1";
+}
+
+/* line 1415, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-cube:before {
+  content: "\f1b2";
+}
+
+/* line 1418, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-cubes:before {
+  content: "\f1b3";
+}
+
+/* line 1421, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-behance:before {
+  content: "\f1b4";
+}
+
+/* line 1424, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-behance-square:before {
+  content: "\f1b5";
+}
+
+/* line 1427, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-steam:before {
+  content: "\f1b6";
+}
+
+/* line 1430, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-steam-square:before {
+  content: "\f1b7";
+}
+
+/* line 1433, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-recycle:before {
+  content: "\f1b8";
+}
+
+/* line 1437, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-automobile:before,
+.fa-car:before {
+  content: "\f1b9";
+}
+
+/* line 1441, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "\f1ba";
+}
+
+/* line 1444, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-tree:before {
+  content: "\f1bb";
+}
+
+/* line 1447, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-spotify:before {
+  content: "\f1bc";
+}
+
+/* line 1450, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-deviantart:before {
+  content: "\f1bd";
+}
+
+/* line 1453, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-soundcloud:before {
+  content: "\f1be";
+}
+
+/* line 1456, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-database:before {
+  content: "\f1c0";
+}
+
+/* line 1459, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-pdf-o:before {
+  content: "\f1c1";
+}
+
+/* line 1462, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-word-o:before {
+  content: "\f1c2";
+}
+
+/* line 1465, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-excel-o:before {
+  content: "\f1c3";
+}
+
+/* line 1468, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+
+/* line 1473, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "\f1c5";
+}
+
+/* line 1477, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "\f1c6";
+}
+
+/* line 1481, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "\f1c7";
+}
+
+/* line 1485, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "\f1c8";
+}
+
+/* line 1488, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-file-code-o:before {
+  content: "\f1c9";
+}
+
+/* line 1491, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-vine:before {
+  content: "\f1ca";
+}
+
+/* line 1494, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-codepen:before {
+  content: "\f1cb";
+}
+
+/* line 1497, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-jsfiddle:before {
+  content: "\f1cc";
+}
+
+/* line 1503, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-life-bouy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "\f1cd";
+}
+
+/* line 1506, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-circle-o-notch:before {
+  content: "\f1ce";
+}
+
+/* line 1510, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ra:before,
+.fa-rebel:before {
+  content: "\f1d0";
+}
+
+/* line 1514, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-ge:before,
+.fa-empire:before {
+  content: "\f1d1";
+}
+
+/* line 1517, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-git-square:before {
+  content: "\f1d2";
+}
+
+/* line 1520, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-git:before {
+  content: "\f1d3";
+}
+
+/* line 1523, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-hacker-news:before {
+  content: "\f1d4";
+}
+
+/* line 1526, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-tencent-weibo:before {
+  content: "\f1d5";
+}
+
+/* line 1529, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-qq:before {
+  content: "\f1d6";
+}
+
+/* line 1533, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "\f1d7";
+}
+
+/* line 1537, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "\f1d8";
+}
+
+/* line 1541, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "\f1d9";
+}
+
+/* line 1544, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-history:before {
+  content: "\f1da";
+}
+
+/* line 1547, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-circle-thin:before {
+  content: "\f1db";
+}
+
+/* line 1550, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-header:before {
+  content: "\f1dc";
+}
+
+/* line 1553, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-paragraph:before {
+  content: "\f1dd";
+}
+
+/* line 1556, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-sliders:before {
+  content: "\f1de";
+}
+
+/* line 1559, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-share-alt:before {
+  content: "\f1e0";
+}
+
+/* line 1562, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-share-alt-square:before {
+  content: "\f1e1";
+}
+
+/* line 1565, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/font-awesome.css.scss */
+.fa-bomb:before {
+  content: "\f1e2";
+}
+/* Smaller than standard 960 (devices and browsers) */
+
+@media only screen and (max-width: 959px) {
+	
+	.site-logo{padding-left: 16px;}
+
+	.mobile-nav-button{
+		display: block;
+	}
+	.nav-menu{
+		display: none;
+		width: 100%;
+		height: auto;
+		top: 30%;
+		background: #FFF;
+		padding: 32px 16px;
+		margin-top: 14px;
+	}
+	.nav li {float: none;}
+	.nav li a:after{content:"";}
+
+	.text-slides{
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.home, .call-out, .process, .clients{
+		background-attachment:initial;
+		background-position: center top;
+	}
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	.home {background-attachment:scroll;}
+	.header{padding-top: 200px;}
+	.headertext{width: 550px;}
+	.team-photo ul.team-social-links{bottom: 10px;}
+	.team-photo ul.team-social-links li{margin: 0 2px;}
+	.item h5, .team-photo h6, .post-img h5 {display: none;}
+	.item .mask a.zoom{left:55%;} 
+	.item .mask a.expander{ right:55%;} 
+
+	.process-col, .post-preview, .service-item, 
+	.team, .about-item {padding: 0 16px;}
+	.service-item .button {display:block;}
+
+	#services .container .eight.columns {width: 748px;}
+	#services .container .four.columns {width: 364px;}
+	.mockup-tablet {margin: 0 auto;}
+	
+	.item{width: 33.3%;}
+	#team-slider{width:80%;}
+	.mockup-monitor{margin: 0 auto;}
+
+	#team-skills .container .eight.columns {width: 748px;}
+	#team-skills .container .eight.columns .row:first-child {width: 50%; margin: 48px auto;}
+	#team-skills .container .eight.columns .row:nth-child(2) {width: 80%; margin: 0 auto;}
+	#team-skills .container .two.columns {width: 22%;}
+
+	#client-slider{width:100%;}
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+	.loader-title{top:30%;}
+	.header .logo{
+		font-size: 72px;
+		line-height: 80px;
+	}	
+	.text-slides{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.home {background-attachment:scroll;}
+
+	.columns, .column {margin-bottom: 24px !important;}
+	#google-map {height:300px;}
+
+	a.button {display: inline-block;}
+	.call-out a.button{margin: 16px 0 0 0;}
+
+	#services .container .eight.columns {width: 300px;}
+	#services .container .four.columns {width: 300px;}
+	.mockup-tablet {margin: 0 auto;}
+
+	#team-slider{width:100%;}
+	.item{width: 100%;}
+	#client-slider{width:100%;}
+
+	.mockup-monitor{margin: 0 auto;}
+	.mockup-tablet{
+		background-size:300px 378px;
+		width: 300px;
+		height: 378px;
+		padding-top: 38px;
+		padding-left: 1px;
+	}
+	.mockup-tablet .screen-item img{
+		width:224px;
+		height: 304px;
+	}
+	.mockup-monitor{
+		background-size:300px 254px;
+		width: 300px;
+		height: 254px;
+		padding-top: 16px;
+	}
+	.mockup-monitor .screen-item img{
+		width:268px;
+		height:151px;
+	}
+	#team-skills .container .eight.columns {width: 300px;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+	.header{padding-top: 200px;}
+	.headertext-slider{width: 450px !important;}
+	.headertext{width: 400px;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 567px) {
+	.header{padding-top: 100px;}
+	.headertext-slider{width: 250px !important;}
+	a.header-down-arrow {display: none;}
+	.title { font-size: 30px; line-height: 48px; }
+	.subtitle { font-size: 22px; line-height: 28px; }
+}
