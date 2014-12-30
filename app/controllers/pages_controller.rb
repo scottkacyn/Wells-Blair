@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def index
+    @jobs = Job.all.limit(5)
   end
 
   def client_solutions

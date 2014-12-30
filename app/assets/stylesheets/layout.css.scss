@@ -46,8 +46,18 @@ button#submit {border:1px solid #960000;}
 .animated{visibility:hidden;}
 .visible{visibility:visible;}
 
+.opportunities-container {
+	text-align: center;
+	background: #fafafa;
+	padding: 0 5%;
+}
+
 /* Call out titles */
-.callout {background: #fafafa; padding-top:40px;}
+.callout {
+	text-align: center;
+	background: #fafafa; 
+	padding: 120px 0 40px 0;
+}
 .callout h3 {color: #343434;}
 .callout .subtitle{
 	color: #343434;
@@ -1814,11 +1824,12 @@ Job Form
 	image-url("pattern-2.png") left top repeat,
 	image-url("parallax/chicago-skyline-darkcolored.jpg") center center fixed;
 	padding:40px 0 0 0;
-	text-align: center;
 	overflow: hidden;
 }
 #job .title {color: #fff;}
 #job .subtitle{color: #fff;}
+#job p { width: 60%; min-width: 300px; margin: 15px auto; text-align: left; }
+#job ul { list-style: disc; width: 60%; min-width: 300px; margin: 0 auto; text-align: left; }
 
 /* --------------------------------
 Social Media
@@ -1858,11 +1869,11 @@ Footer
 -------------------------------- */
 #footer-bottom{
 	position: relative; 
-	background: #222;
+	background: #aaa;
 	color: #fff;
 }
 #footer-bottom a {
-	color: #aaa !important;
+	color: #777 !important;
 }
 #footer-bottom .container {padding:24px 0;}
 #footer-bottom h2 {color: #fff;}
@@ -1875,7 +1886,7 @@ a.button-to-top{
 	padding: 4px 0;
 	width: 32px;
 	height: 32px;
-	background: #222;
+	background: #aaa;
 	color: #fff;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;

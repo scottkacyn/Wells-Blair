@@ -63,137 +63,15 @@
 		<div id="portfolio-container">
 		<!-- Portfolio Items -->
 			<div class="portfolio-items">
-
-				<!-- Item 1 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
+				<% @jobs.each do |job| %>
+					<div class="item <%= (job.location == 'Chicago, IL') ? 'chicago' : 'houston' %>">
+						<%= image_tag "project-1.jpg" %>
+						<div class="mask">
+						</div>
+						<h5><%= link_to job.title, job %></h5>
+						<p><%= job.industry %> | <%= job.location %></p>
 					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">EXECUTIVE RECRUITER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-				
-				<!-- Item 2 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html">RECRUITING MANAGER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-
-				<!-- Item 3 -->
-				<div class="item houston">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">TAX SPECIALIST</a></h5>
-					<p>Energy | Houston, TX</p>
-				</div>
-
-				<!-- Item 1 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html">RECRUITING MANAGER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-				
-				<!-- Item 1 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">EXECUTIVE RECRUITER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-
-				<div class="item houston">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">TAX SPECIALIST</a></h5>
-					<p>Energy | Houston, TX</p>
-				</div>
-
-				<!-- Item 1 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html">RECRUITING MANAGER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-
-				<!-- Item 1 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">EXECUTIVE RECRUITER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-
-				<div class="item houston">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">TAX SPECIALIST</a></h5>
-					<p>Energy | Houston, TX</p>
-				</div>
-
-				<!-- Item 1 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html">RECRUITING MANAGER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-				
-				<!-- Item 1 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">EXECUTIVE RECRUITER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-
-				<div class="item houston">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">TAX SPECIALIST</a></h5>
-					<p>Energy | Houston, TX</p>
-				</div>
-
-				<!-- Item 1 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html">RECRUITING MANAGER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-				
-				<!-- Item 1 -->
-				<div class="item chicago">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">EXECUTIVE RECRUITER</a></h5>
-					<p>Recruiting | Chicago, IL</p>
-				</div>
-
-				<div class="item houston">
-					<%= image_tag 'project-1.jpg' %>
-					<div class="mask">
-					</div>
-					<h5><a href="job_form.html?title=Tax Specialist&loc=Houston, TX">TAX SPECIALIST</a></h5>
-					<p>Energy | Houston, TX</p>
-				</div>
+				<% end %>
 			</div>
 		</div><!-- end portfolio items -->
 	</div><!-- end container -->

@@ -1,0 +1,49 @@
+<section id="job" class="section">
+
+	<section class="callout">
+		<div class="container">
+			<h4 class="subtitle"><%= @job.title %></h4>
+			<h5 class="subtitle" style="padding-top:5px;"><%= @job.location %></h5>
+			<%=raw @job.description %>
+		</div>
+	</section>
+
+	<div class="container">
+		
+		<div class="contact-form">
+			
+			<div class="error-container">
+				<span class="error" id="error-name">Please enter your name</span>
+				<span class="error" id="error-email">Please enter your email</span>
+				<span class="error" id="error-valid-email">Your e-mail is not a valid format</span>
+				<span class="error" id="error-valid-phone">Your phone number is not a valid format</span>
+				<span class="error" id="error-timedout">The email submission timed out. Please try again.</span>
+				<span class="error" id="error-state">Oops! An error occurred. Please try again later.</span>
+				<span class="success" id="email-success">Message received! Thank you.</span>
+			</div><!-- end error messages -->
+
+			<form id="contact-us" method="post" action="php/mail.php">
+				
+				<div class="eight columns">
+					<input type="text" name="name" id="name" required="required" placeholder="Name" />
+					<input type="email" name="email" id="email" required="required" placeholder="Email" />
+					<input type="text" name="phone" id="phone" placeholder="Phone" />
+					<input type="text" name="company" id="company" required="required" placeholder="Company" />
+					<input type="text" name="address" id="address" required="required" placeholder="Address" />
+				</div>
+
+				<div class="eight columns">
+					<input type="text" name="city" id="city" placeholder="City" />
+					<input type="text" name="state" id="state" required="required" placeholder="State" />
+					<input type="text" name="zip" id="zip" required="required" placeholder="Zip" />
+					<h5>Attach Your Resume</h5>
+					<input type="file"  name="resume" id="resume" required="required" placeholder="Upload Resume" />
+				</div>
+
+				<button type="submit" id="submit" name="submit">Submit Resume</button> 
+			</form>
+		</div><!-- end contact form -->
+
+	</div><!-- end container -->
+
+</section><!-- end map section -->
