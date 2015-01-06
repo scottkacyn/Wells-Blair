@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  resources :homepage_headlines
+
+  resources :headlines
+
+  resources :specialties
+
+  resources :about_bullets
+
+  resources :partners
+
+  resources :testimonials
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :jobs

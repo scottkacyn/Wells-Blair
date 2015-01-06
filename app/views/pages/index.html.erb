@@ -11,21 +11,13 @@
 		
 		<!-- Header Text -->
 		<div class="headertext-slider">
-			<div class="headertext">
-				<span class="slabtext">We focus our efforts</span>
-				<span class="slabtext">within one specialization:</span>
-				<span class="slabtext">Tax Recruiting</span>
-			</div>
-			<div class="headertext">
-				<span class="slabtext">We deliver</span>
-				<span class="slabtext">high-performing</span>
-				<span class="slabtext">professional tax talent</span>
-			</div>
-			<div class="headertext">
-				<span class="slabtext">and we provide</span>
-				<span class="slabtext">our network with</span>
-				<span class="slabtext">tremendous tax opportunities</span>
-			</div>
+			<% @headlines.each do |headline| %>
+				<div class="headertext">
+					<% if !headline.line1.blank? %><span class="slabtext"><%= headline.line1 %></span><% end %>
+					<% if !headline.line2.blank? %><span class="slabtext"><%= headline.line2 %></span><% end %>
+					<% if !headline.line3.blank? %><span class="slabtext"><%= headline.line3 %></span><% end %>
+				</div>
+			<% end %>
 		</div><!-- end header text -->
 
 		<br>
@@ -83,8 +75,8 @@
 <section id="contact" class="section">
 	<div class="container">
 
-		<h2 class="title">Start a Conversation</h2>
-		<h4 class="subtitle">If you are a company looking for great talent or a tax professional interested in a conversation<br>about existing opportunities, fill out the form below and we will get in touch.</h4>
+		<h2 class="title"><%= @contact.title %></h2>
+		<h4 class="subtitle"><%= @contact.subtitle %></h4>
 		
 		<div class="contact-form">
 			

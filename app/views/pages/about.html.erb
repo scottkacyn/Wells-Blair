@@ -1,98 +1,48 @@
 <section id="about" class="section">
 	<section class="callout">
-		<h2 class="title">Great People. Great Jobs.</h2>
+		<h2 class="title"><%= @headline.title %></h2>
+		<h4 class="subtitle"><%= @headline.subtitle %></h4>
 	</section>
 
 	<div class="container">
-		<div class="four columns about-item">
-			<a href="#" class="icon-btn"><i class="fa fa-bullhorn fa-4x"></i></a>
-			<h5>Communication is King</h5>
-			It might sound simple, but clear and detailed communication is one of the most important aspects of any search.</div>
-		<div class="four columns about-item">
-			<a href="#" class="icon-btn"><i class="fa fa-trophy fa-4x"></i></a>
-			<h5>Quality Over Quantity</h5>
-			A lot of people might say it, however we deliver on it. Save your time and energy.</div>
-		<div class="four columns about-item">
-			<a href="#" class="icon-btn"><i class="fa fa-bullseye fa-4x"></i></a>
-			<h5>Tax Specialized</h5>
-			It is what makes us Wells Blair. We understand the market and have the track record to prove it.</div>
-		<div class="four columns about-item">
-			<a href="#" class="icon-btn"><i class="fa fa-group fa-4x"></i></a>
-			<h5>Teamwork is Powerful</h5>
-			Each piece of the puzzle is important and it takes great coordination to achieve awesome results.</div>
+		<% @bullets.each do |bullet| %>
+			<div class="four columns about-item">
+				<a href="#" class="icon-btn"><i class="fa fa-<%= bullet.icon %> fa-4x"></i></a>
+				<h5><%= bullet.title %></h5>
+				<%= bullet.subtitle %>
+			</div>
+		<% end %>
 	</div><!-- end container -->
 
-
-	<!-- Begin Testimonials -->
+	<div id="team-slider" class="owl-carousel owl-theme">
+		<% @partners.each do |partner| %>
+			<div class="team">
+				<div class="team-photo">
+					<%= image_tag partner.photo, class: "scale-with-grid", width: "300px" %>
+				</div><!-- end team photo -->
+				<div class="team-title">
+					<h4><%= partner.name %></h4>
+					<h6><%= partner.title %></h6>
+				</div>
+				<div class="team-info">
+					<p><%= partner.bio %></p>
+					<ul class="team-social-links">
+						<li><a href="<%= partner.linkedin %>" target="_blank" class="social-btn linkedin-btn"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div><!-- end team member -->
+		<% end %>
+	</div><!-- end container -->
+	
 	<div class="container testimonials">
 		<div class="testimonial-slider">
-			<!-- Testimonial 1 -->
-			<div class="t-slide">
-				<h4>This was my first experience with Wells Blair. I gave them the opportunity due to their tax specialization. They presented <span class="color">the most qualified candidates</span> of any of the firms we were working with on the position. They helped us during the offer stage and we ended up hiring a great candidate. We will definitely work with them in the future.</h4>
-				<p>Ron, Vice President of Tax, Fortune 500 Energy Company</p>
-			</div>
-			<!-- Testimonial 2 -->
-			<div class="t-slide">
-				<h4>When first speaking with Wells Blair, they gave me a detailed overview of their recruiting process and spoke with me in detail about my experience and my interests. They were flexible with my schedule, presented me with a number of opportunities that met my search criteria, and in the end <span class="color">landed me a great offer</span> that I accepted. I will recommend Wells Blair to my network.</h4>
-				<p>Stacy, Senior Tax Manager, Fortune 100 Company</p>
-			</div>
+			<% @testimonials.each do |testimonial| %>
+				<div class="t-slide">
+					<h4>"<%= testimonial.body %>"</h4>
+					<p><%= testimonial.signature %></p>
+				</div>
+			<% end %>
 		</div><!-- end testimonials list -->
 	</div><!-- end testimonial container -->
 
-<!-- ///////////// Team Section ///////////// -->
-
-	<div id="team-slider" class="owl-carousel owl-theme">
-		
-		<!-- Begin Team Member -->
-		<div class="team">
-			<div class="team-photo">
-				<%= image_tag "http://www.wellsblair.com/img/headshots/blair.jpg", class: "scale-with-grid", width: "300px" %>
-			</div><!-- end team photo -->
-			<div class="team-title">
-				<h4>Jason Blair</h4>
-				<h6>Managing Partner</h6>
-			</div>
-			<div class="team-info">
-				<p>Jason is a co-founder and Managing Partner at Wells Blair and has been working in permanent placement since 2005 in both Chicago, IL and Houston, TX. Jason has a BS with a concentration in Finance from Eastern Illinois University and prior to his working in the staffing industry, he spent five years in corporate accounting at MetLife in Tampa, FL. Jason's function at Wells Blair is primarily involved in strategic planning, revenue generation, client relationship management, and staff development. He specializes in tax placement for the Oil & Gas and Energy industries and has a track record of building long-term successful relationships.</p>
-				<ul class="team-social-links">
-					<li><a href="https://www.linkedin.com/profile/view?id=6479088" target="_blank" class="social-btn linkedin-btn"><i class="fa fa-linkedin"></i></a></li>
-				</ul>
-			</div>
-		</div><!-- end team member -->
-
-		<!-- Begin Team Member -->
-		<div class="team">
-			<div class="team-photo">
-				<%= image_tag "http://www.wellsblair.com/img/headshots/wellstein.jpg", class: "scale-with-grid", width: "300px" %>
-			</div><!-- end team photo -->
-			<div class="team-title">
-				<h4>Bob Wellstein</h4>
-				<h6>Managing Partner</h6>
-			</div>
-			<div class="team-info">
-				<p>Bob is a co-founder and Managing Partner at Wells Blair. He has extensive experience in the recruiting and staffing industry. The majority of his experience has been focused on the permanent placement of Tax professionals in the Chicago, IL and Houston, TX job markets. His specialization includes a focus on Domestic and International taxation within the Oil & Gas, Manufacturing, Engineering, and Construction industries. Bob's core functions at Wells Blair include a focus on business strategy, client development and direct recruiting. Bob earned his Bachelor's degree from The Ohio State University - Fisher College of Business.</p>
-				<ul class="team-social-links">
-					<li><a href="https://www.linkedin.com/profile/view?id=51323645" target="_blank" class="social-btn linkedin-btn"><i class="fa fa-linkedin"></i></a></li>
-				</ul>
-			</div>
-		</div><!-- end team member -->
-		
-		<!-- Begin Team Member -->
-		<div class="team">
-			<div class="team-photo">
-				<%= image_tag "http://www.wellsblair.com/img/headshots/berchou.jpg", class: "scale-with-grid", width: "300px" %>
-			</div><!-- end team photo -->
-			<div class="team-title">
-				<h4>Tom Berchou</h4>
-				<h6>Partner</h6>
-			</div>
-			<div class="team-info">
-				<p>Tom has over 15 years of experience in the permanent placement industry as both a recruiter and leader, specializing in the Accounting/Finance field. Tom had a solid track record of success at two previous search firms, one a Fortune 500 staffing firm, before specializing in tax placement since 2009. Tom's function is as a revenue producer through client and candidate development, providing strategic direction for the company, operations, and in recruiting and developing internal employees. Tom graduated with a Masters in Business Administration from the University of Notre Dame, specializing in Finance.</p>
-				<ul class="team-social-links">
-					<li><a href="https://www.linkedin.com/profile/view?id=12575936" target="_blank" class="social-btn linkedin-btn"><i class="fa fa-linkedin"></i></a></li>
-				</ul>
-			</div>
-		</div><!-- end team member -->
-
-	</div><!-- end container -->
 </section><!-- end team section -->

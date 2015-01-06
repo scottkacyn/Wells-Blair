@@ -126,7 +126,7 @@
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 567px) {
 	.header{padding-top: 100px;}
-	.headertext-slider{width: 250px !important;}
+	.headertext-slider{width: 100% !important;}
 	a.header-down-arrow {display: none;}
 	.title { font-size: 30px; line-height: 48px; }
 	.subtitle { font-size: 22px; line-height: 28px; }

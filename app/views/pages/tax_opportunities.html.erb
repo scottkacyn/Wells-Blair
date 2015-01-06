@@ -1,7 +1,8 @@
 <section id="portfolio" class="section">
 
 	<section class="callout">
-		<h2 class="title">Tax Opportunities</h2>
+		<h2 class="title"><%= @headline.title %></h2>
+		<h4 class="subtitle"><%= @headline.subtitle %></h4>
 	</section>
 
 	<div class="opportunities-container">
@@ -24,7 +25,7 @@
 						<div class="mask">
 						</div>
 						<h5><%= link_to job.title, job %></h5>
-						<p><%= job.industry %> | <%= job.location %></p>
+						<p><%= job.industry + " | " if !job.industry.blank? %><%= job.location %></p>
 					</div>
 				<% end %>
 			</div>

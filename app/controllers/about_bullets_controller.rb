@@ -1,0 +1,2 @@
+class AboutBulletsController < ApplicationController
+end

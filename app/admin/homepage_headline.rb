@@ -1,6 +1,6 @@
-ActiveAdmin.register Job do
+ActiveAdmin.register HomepageHeadline do
 
-  permit_params :title, :industry, :location, :description, :email
+  permit_params :line1, :line2, :line3
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

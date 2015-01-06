@@ -61,8 +61,9 @@ button#submit {border:1px solid #960000;}
 .callout h3 {color: #343434;}
 .callout .subtitle{
 	color: #343434;
-	margin: 0; 
+	margin: 25px 10%; 
 }
+h4.subtitle { font-size: 18px; }
 
 .text-container {
 	background: #fafafa;
@@ -80,6 +81,11 @@ button#submit {border:1px solid #960000;}
 
 .text-container .container p {
 	line-height: 2.4em;
+}
+
+.text-section p {
+	padding: 30px;
+	font-size: 18px;
 }
 
 /* Page Header */
@@ -237,7 +243,7 @@ a.header-down-arrow:hover{color: #960000;}
 	background-attachment: fixed;
 }
 #slides .slides-container .slide-1{
-	background:image-url("headers/businessmen.jpg") center right;
+	background:image-url("headers/businessmen.jpg") no-repeat center right rgba(245,246,241,1);
 	position: absolute;
 	overflow: hidden;
 	height: 100%;
@@ -1849,11 +1855,6 @@ Social Media
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-
-.text-section p {
-	font-size: 18px;
-}
-
 
 /* --------------------------------
 Extras
