@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def client_solutions
-    @headline = Headline.find_by(page: "Client Solutions") || Headline.new(page: "Client Solutions", title: "Specialized Tax Recruitment Solutions", subtitle: "With over 50 years of recruiting experience, the Wells Blair team can provide your tax department with the ideal end-to-end recruiting solution that will meet the challenges of your project, whether you are hiring one new position or building a new tax group. Attracting and retaining high-performing tax professionals is very challenging. For an increased level of service, we can provide your corporate tax department with proven strategies that many major companies are implementing to achieve world-class tax departments.")
+    @headline = Headline.find_by(page: "Client Solutions") || Headline.new(page: "Client Solutions", title: "Specialized Tax Recruitment Solutions", subtitle: "With over 50 years of recruiting experience, the Wells Blair team can provide your tax department with the ideal end-to-end recruiting solution that will meet the challenges of your project, whether you are hiring one new position or building a new tax group. Attracting and retaining high-performing tax professionals is very challenging. We can provide your corporate tax department with proven strategies that many major companies are implementing to achieve world-class tax departments.")
   end
 
   def contact
@@ -27,6 +27,6 @@ class PagesController < ApplicationController
 
   def services
     @specialties = Specialty.all
-    @headline = Headline.find_by(page: "What We Do") || Headline.new(page: "What We Do", title: "Our Difference Is Specialization", subtitle: "The Wells Blair approach is focused on specialized tax recruiting. We work all day everyday building relationships with high-performing tax professionals and large corporate tax departments. The end result is an unmatched network of passive tax profession.")
+    @headline = Headline.find_by(page: "What We Do") || Headline.new(page: "What We Do", title: "Our Difference Is Specialization", subtitle: "The Wells Blair approach is focused on specialized tax recruiting.  We work all day everyday building relationships with high-performing tax professionals and large corporate tax departments. The end result is an unmatched network of passive tax professionals who seek the right opportunity for their career and an exclusive roster of clients who seek qualified tax professionals that will provide value-added experience to their teams.")
   end
 end

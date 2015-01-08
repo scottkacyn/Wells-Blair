@@ -14,27 +14,31 @@
 		<% end %>
 	</div><!-- end container -->
 
-	<div id="team-slider" class="owl-carousel owl-theme">
-		<% @partners.each do |partner| %>
-			<div class="team">
-				<div class="team-photo">
-					<%= image_tag partner.photo, class: "scale-with-grid", width: "300px" %>
-				</div><!-- end team photo -->
-				<div class="team-title">
-					<h4><%= partner.name %></h4>
-					<h6><%= partner.title %></h6>
-				</div>
-				<div class="team-info">
-					<p><%= partner.bio %></p>
-					<ul class="team-social-links">
-						<li><a href="<%= partner.linkedin %>" target="_blank" class="social-btn linkedin-btn"><i class="fa fa-linkedin"></i></a></li>
-					</ul>
-				</div>
-			</div><!-- end team member -->
-		<% end %>
-	</div><!-- end container -->
+	<div class="paneled-bg">
+		<h2>Leadership</h2>
+		<div id="team-slider" class="owl-carousel owl-theme">
+			<% @partners.each do |partner| %>
+				<div class="team">
+					<div class="team-photo">
+						<%= image_tag partner.photo, class: "scale-with-grid", width: "300px" %>
+					</div><!-- end team photo -->
+					<div class="team-title">
+						<h4><%= partner.name %></h4>
+						<h6><%= partner.title %></h6>
+					</div>
+					<div class="team-info">
+						<p><%= partner.bio %></p>
+						<ul class="team-social-links">
+							<li><a href="<%= partner.linkedin %>" target="_blank" class="social-btn linkedin-btn"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div><!-- end team member -->
+			<% end %>
+		</div><!-- end container -->
+	</div>
 	
 	<div class="container testimonials">
+		<h2>Testimonials</h2><br><br>
 		<div class="testimonial-slider">
 			<% @testimonials.each do |testimonial| %>
 				<div class="t-slide">
@@ -43,6 +47,7 @@
 				</div>
 			<% end %>
 		</div><!-- end testimonials list -->
+		<br><br>
 	</div><!-- end testimonial container -->
 
 </section><!-- end team section -->

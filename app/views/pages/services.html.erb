@@ -7,15 +7,29 @@
 	<div class="container">
 		<h2 style="color:#fff;">Our Areas of Expertise</h2>
 		<div class="sixteen columns omega">
-			<div class="row top-row">
-				<% @specialties.each do |specialty| %>
-					<div class="four columns alpha service-item">
-						<i class="fa fa-<%= specialty.icon %> fa-4x"></i>
-						<h5><%= specialty.title %></h5>
-						<div class="divider"></div>
-					</div>
+			
+			<% @specialties.each_with_index do |specialty, index| %>
+
+				<!-- Add opening row tag -->
+				<% if (index % 4) == 0 %>
+					<% if index == 0 %>
+						<div class="row top-row">
+					<% else %>
+						<div class="row">
+					<% end %>
 				<% end %>
-			</div><!-- end row -->
+
+				<div class="four columns alpha service-item">
+					<i class="fa fa-<%= specialty.icon %> fa-4x"></i>
+					<h5><%= specialty.title %></h5>
+					<div class="divider"></div>
+				</div>
+
+				<!-- Add closing row tag -->
+				<% if (index % 4) == 3 || index+1 == @specialties.count %>
+				 	</div>
+				<% end %>
+			<% end %>
 		</div><!-- end column -->
 
 	</div><!-- end container -->	

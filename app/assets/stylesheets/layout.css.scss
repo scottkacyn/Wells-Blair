@@ -61,9 +61,12 @@ button#submit {border:1px solid #960000;}
 .callout h3 {color: #343434;}
 .callout .subtitle{
 	color: #343434;
-	margin: 25px 10%; 
 }
-h4.subtitle { font-size: 18px; }
+h4.subtitle {
+	max-width: 800px;
+	font-size: 18px;
+	margin: 25px auto;
+}
 
 .text-container {
 	background: #fafafa;
@@ -480,7 +483,6 @@ Testimonials
 
 .testimonials{
 	padding: 56px 0;
-	border-top: 1px dashed #b5b5b5;
 }
 
 .testimonial-slider{
@@ -543,6 +545,18 @@ Testimonials
 /* --------------------------------
 Team Section
 -------------------------------- */
+
+.paneled-bg {
+	width: 100%;
+	background: #fafafa;
+	padding: 40px 0 0 0;
+	border-bottom: 1px dashed #eee;
+	text-align: center;
+}
+
+.paneled-bg h2 {
+	margin-bottom: 70px;
+}
 
 #team-slider{
 	width:1200px;
@@ -828,6 +842,7 @@ Portfolio Section
 
 .container.filter-menu{
 	padding:24px 0 0 0;
+	width: 100%;
 }
 
 .option-set li{
