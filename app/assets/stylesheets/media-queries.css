@@ -38,7 +38,7 @@
 	.headertext{width: 550px;}
 	.team-photo ul.team-social-links{bottom: 10px;}
 	.team-photo ul.team-social-links li{margin: 0 2px;}
-	.item h5, .team-photo h6, .post-img h5 {display: none;}
+	.team-photo h6, .post-img h5 {display: none;}
 	.item .mask a.zoom{left:55%;} 
 	.item .mask a.expander{ right:55%;} 
 

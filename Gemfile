@@ -11,6 +11,8 @@ gem 'sass-rails', '~> 4.0.3'
 # Active Admin
 gem 'devise', github: 'plataformatec/devise'
 gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
+gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
