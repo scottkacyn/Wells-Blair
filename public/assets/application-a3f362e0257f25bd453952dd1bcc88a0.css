@@ -1158,10 +1158,16 @@ button#submit {
 /* line 63, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .callout .subtitle {
   color: #343434;
-  margin: 0;
 }
 
-/* line 68, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 66, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+h4.subtitle {
+  max-width: 800px;
+  font-size: 18px;
+  margin: 25px auto;
+}
+
+/* line 72, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .text-container {
   background: #fafafa;
   color: #343434 !important;
@@ -1169,7 +1175,7 @@ button#submit {
   padding-bottom: 50px;
 }
 
-/* line 75, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 79, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .text-container .container {
   background: #fff;
   padding: 0 !important;
@@ -1177,13 +1183,19 @@ button#submit {
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 82, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 86, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .text-container .container p {
   line-height: 2.4em;
 }
 
+/* line 90, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.text-section p {
+  padding: 30px;
+  font-size: 18px;
+}
+
 /* Page Header */
-/* line 87, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 96, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .page-header {
   text-align: center;
   height: auto;
@@ -1192,7 +1204,7 @@ button#submit {
   border-bottom: 1px solid rgba(108, 108, 108, 0.2);
 }
 
-/* line 94, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 103, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .page-header .subtitle {
   margin: 0;
 }
@@ -1200,7 +1212,7 @@ button#submit {
 /* --------------------------------
 Page Loader
 -------------------------------- */
-/* line 100, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 109, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #preloader {
   position: fixed;
   top: 0;
@@ -1211,7 +1223,7 @@ Page Loader
   z-index: 9999;
 }
 
-/* line 109, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 118, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .loader-title {
   position: absolute;
   margin: 0 0 0 -134px;
@@ -1220,7 +1232,7 @@ Page Loader
   color: #b4b4b4;
 }
 
-/* line 116, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 125, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .loader {
   position: absolute;
   margin: -25px 0 0 -25px;
@@ -1232,7 +1244,7 @@ Page Loader
 /* --------------------------------
 Home (Header) Section
 -------------------------------- */
-/* line 128, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 137, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .home {
   background: url(/images/banner-img-1.jpg) center center fixed;
   position: relative;
@@ -1241,18 +1253,18 @@ Home (Header) Section
   top: 0;
 }
 
-/* line 135, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 144, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .home:after {
   clear: both;
 }
 
-/* line 136, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 145, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .header {
   padding-top: 200px;
   text-align: center;
 }
 
-/* line 141, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 150, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .headertext-slider {
   display: block;
   width: 550px !important;
@@ -1260,7 +1272,7 @@ Home (Header) Section
   margin: 0 auto;
 }
 
-/* line 148, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 157, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .headertext {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -1277,12 +1289,12 @@ Home (Header) Section
   border-radius: 2px;
 }
 
-/* line 163, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 172, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slabtexted .headertext {
   line-height: 1;
 }
 
-/* line 164, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 173, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slabtexted .headertext span:nth-child(2) {
   line-height: 1;
   border-top: 2px solid #fff;
@@ -1291,12 +1303,12 @@ Home (Header) Section
   margin: 16px 0;
 }
 
-/* line 171, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 180, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slabtexted .headertext span:nth-child(3) {
   line-height: 1;
 }
 
-/* line 172, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 181, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slabtexted .headertext span:nth-child(4) {
   line-height: 1;
   border-top: 2px solid #fff;
@@ -1304,14 +1316,14 @@ Home (Header) Section
   margin-top: 16px;
 }
 
-/* line 179, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 188, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slabtexted .slabtext {
   display: -moz-inline-box;
   display: inline-block;
   white-space: nowrap;
 }
 
-/* line 184, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 193, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slabtextinactive .slabtext {
   display: inline;
   white-space: normal;
@@ -1322,17 +1334,17 @@ Home (Header) Section
   *word-spacing: 0 !important;
 }
 
-/* line 193, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 202, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slabtextdone .slabtext {
   display: block;
 }
 
-/* line 194, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 203, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slabtext {
   color: #111;
 }
 
-/* line 196, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 205, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.header-down-arrow {
   color: #555;
   display: inline-block;
@@ -1341,18 +1353,18 @@ a.header-down-arrow {
   margin-top: 50px;
 }
 
-/* line 203, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 212, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.header-down-arrow:after {
   content: "\25be";
 }
 
-/* line 204, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 213, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.header-down-arrow:hover {
   color: #960000;
 }
 
 /* Home Section Full Screen Slider */
-/* line 208, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 217, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slider-home {
   position: absolute;
   height: 100%;
@@ -1362,12 +1374,12 @@ a.header-down-arrow:hover {
   text-align: center;
 }
 
-/* line 216, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 225, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slides-text {
   width: 38%;
 }
 
-/* line 220, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 229, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #slides {
   position: relative;
   overflow: hidden;
@@ -1375,7 +1387,7 @@ a.header-down-arrow:hover {
   height: 100%;
 }
 
-/* line 227, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 236, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #slides .slides-container {
   margin: 0px;
   padding: 0px;
@@ -1384,16 +1396,16 @@ a.header-down-arrow:hover {
   height: 100%;
 }
 
-/* line 235, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 244, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #slides .slides-container div {
   position: relative;
   background-position: center center;
   background-attachment: fixed;
 }
 
-/* line 240, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 249, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #slides .slides-container .slide-1 {
-  background: url(/assets/headers/businessmen.jpg) center right;
+  background: url(/assets/headers/businessmen.jpg) no-repeat center right #f5f6f1;
   position: absolute;
   overflow: hidden;
   height: 100%;
@@ -1404,7 +1416,7 @@ a.header-down-arrow:hover {
   display: block;
 }
 
-/* line 251, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 260, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slides-navigation {
   position: absolute;
   top: 45%;
@@ -1413,7 +1425,7 @@ a.header-down-arrow:hover {
   z-index: 10;
 }
 
-/* line 258, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 267, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slides-navigation a {
   position: absolute;
   display: block;
@@ -1429,51 +1441,51 @@ a.header-down-arrow:hover {
   border-radius: 24px;
 }
 
-/* line 272, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 281, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slides-navigation a.prev {
   left: 2%;
   padding: 9px 0 0 16px;
 }
 
-/* line 273, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 282, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slides-navigation a.prev:before {
   content: "\ab";
 }
 
-/* line 274, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 283, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slides-navigation a.next {
   right: 2%;
   padding: 9px 0 0 19px;
 }
 
-/* line 275, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 284, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slides-navigation a.next:before {
   content: "\bb";
 }
 
-/* line 276, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 285, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #home:hover .slides-navigation a {
   opacity: .3;
 }
 
-/* line 277, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 286, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .slides-navigation a:hover {
   opacity: .8 !important;
 }
 
 /* Pattern Header */
-/* line 280, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 289, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .pattern {
   background: #2f2f2f url(/assets/pattern-wood.jpg) left top repeat;
 }
 
 /* Video Header */
-/* line 283, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 292, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #video-header {
   background: #000;
 }
 
-/* line 284, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 293, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .video-text {
   position: absolute;
   top: 0;
@@ -1482,7 +1494,7 @@ a.header-down-arrow:hover {
   z-index: 5;
 }
 
-/* line 291, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 300, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .header-mask {
   display: block;
   position: absolute;
@@ -1497,17 +1509,17 @@ a.header-down-arrow:hover {
 /* --------------------------------
 Navigation Bar
 -------------------------------- */
-/* line 306, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 315, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .big-nav {
   height: 72px;
 }
 
-/* line 309, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 318, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .small-nav {
   height: 40px;
 }
 
-/* line 313, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 322, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .site-logo {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -1518,30 +1530,30 @@ Navigation Bar
   font-weight: 400;
 }
 
-/* line 322, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 331, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .big-nav .site-logo {
   font-size: 32px;
   top: 30%;
 }
 
-/* line 326, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 335, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .small-nav .site-logo {
   font-size: 24px;
   top: 20%;
 }
 
-/* line 333, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 342, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav li a.selected,
 .nav li a.current {
   color: #960000 !important;
 }
 
-/* line 335, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 344, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #navigation {
   border-bottom: 1px solid #eee;
 }
 
-/* line 340, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 349, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #navigation,
 #sub-navigation {
   position: fixed;
@@ -1554,22 +1566,22 @@ Navigation Bar
   transition: all 0.5s;
 }
 
-/* line 350, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 359, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #navigation.big-nav {
   background: rgba(255, 255, 255, 0.8);
 }
 
-/* line 351, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 360, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #sub-navigation.big-nav {
   background: white;
 }
 
-/* line 352, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 361, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #navigation.small-nav {
   background: white;
 }
 
-/* line 354, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 363, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav-container {
   margin: 0 auto;
   width: 100%;
@@ -1577,7 +1589,7 @@ Navigation Bar
   max-width: 1170px;
 }
 
-/* line 360, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 369, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .mobile-nav-button {
   display: none;
   color: #960000;
@@ -1593,45 +1605,45 @@ Navigation Bar
   transform: translateY(-50%);
 }
 
-/* line 374, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 383, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .big-nav .mobile-nav-button {
   top: 57%;
 }
 
-/* line 375, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 384, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .small-nav .mobile-nav-button {
   top: 64%;
 }
 
-/* line 376, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 385, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .mobile-nav-button:hover {
   color: #96000;
 }
 
-/* line 378, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 387, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav-menu {
   position: relative;
   float: right;
   height: 100%;
 }
 
-/* line 383, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 392, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .big-nav .nav-menu {
   top: 25%;
 }
 
-/* line 384, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 393, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .small-nav .nav-menu {
   top: 5%;
 }
 
-/* line 386, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 395, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav li {
   float: left;
   position: relative;
 }
 
-/* line 390, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 399, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav li a {
   display: block;
   text-transform: uppercase;
@@ -1640,20 +1652,20 @@ Navigation Bar
   padding: 8px 12px;
 }
 
-/* line 397, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 406, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav li a:hover {
   color: #960000;
 }
 
 /* Drop Down Navigation */
-/* line 402, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 411, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav li i {
   margin-left: 3px;
   font-size: 8px;
   vertical-align: 10%;
 }
 
-/* line 407, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 416, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav ul {
   margin: 20px 0 0 0;
   opacity: 0;
@@ -1666,20 +1678,20 @@ Navigation Bar
   transition: all .2s ease-in-out;
 }
 
-/* line 418, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 427, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav li:hover > ul {
   opacity: 1;
   visibility: visible;
   margin: 0;
 }
 
-/* line 423, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 432, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav ul li {
   float: none;
   display: block;
 }
 
-/* line 427, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 436, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav ul a {
   padding: 10px;
   width: 100%;
@@ -1689,12 +1701,12 @@ Navigation Bar
   float: none;
 }
 
-/* line 435, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 444, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav ul a:after {
   content: "";
 }
 
-/* line 436, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 445, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .nav ul a:hover {
   color: #2f2f2f;
   background-color: rgba(108, 108, 108, 0.3);
@@ -1703,7 +1715,7 @@ Navigation Bar
 /* --------------------------------
 Sub Page
 -------------------------------- */
-/* line 445, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 454, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .sub-page {
   padding-top: 128px;
 }
@@ -1711,12 +1723,12 @@ Sub Page
 /* --------------------------------
 About Section
 -------------------------------- */
-/* line 451, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 460, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .about-item {
   padding: 0 24px;
 }
 
-/* line 452, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 461, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.icon-btn {
   color: #fff;
   display: block;
@@ -1733,7 +1745,7 @@ a.icon-btn {
   transition: all 200ms linear;
 }
 
-/* line 467, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 476, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.icon-btn:hover {
   color: #fff;
   background: #939393;
@@ -1742,13 +1754,12 @@ a.icon-btn:hover {
 /* --------------------------------
 Testimonials
 -------------------------------- */
-/* line 476, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 485, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonials {
   padding: 56px 0;
-  border-top: 1px dashed #b5b5b5;
 }
 
-/* line 481, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 489, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonial-slider {
   max-width: 875px;
   margin: 0 auto;
@@ -1756,44 +1767,44 @@ Testimonials
   overflow: hidden;
 }
 
-/* line 487, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 495, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonial-slider li.t-slide {
   position: absolute;
   height: auto;
 }
 
-/* line 491, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 499, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonial-slider li.t-slide h4:before {
   content: "\201c";
 }
 
-/* line 492, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 500, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonial-slider li.t-slide h4:after {
   content: "\201d";
 }
 
-/* line 493, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 501, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonial-slider li.t-slide:last-child:after {
   clear: both;
 }
 
-/* line 494, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 502, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .t-slide p {
   font-size: 16px;
 }
 
-/* line 497, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 505, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .t-slide p {
   display: inline-block;
 }
 
-/* line 500, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 508, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .t-slide p:before {
   content: "\2013  ";
 }
 
 /* Testimonial Slider Controls */
-/* line 504, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 512, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonials .flex-direction-nav {
   width: 0;
   height: 24px;
@@ -1801,7 +1812,7 @@ Testimonials
   position: relative;
 }
 
-/* line 511, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 519, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonials .flex-direction-nav li a {
   opacity: 1;
   width: 24px;
@@ -1818,17 +1829,17 @@ Testimonials
   border-radius: 3px;
 }
 
-/* line 526, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 534, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonials .flex-direction-nav li a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 529, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 537, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonials .flex-direction-nav li a.flex-prev:after {
   content: "\ab";
 }
 
-/* line 532, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 540, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .testimonials .flex-direction-nav li a.flex-next:after {
   content: "\bb";
   padding-right: 6px;
@@ -1837,13 +1848,27 @@ Testimonials
 /* --------------------------------
 Team Section
 -------------------------------- */
-/* line 542, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 550, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.paneled-bg {
+  width: 100%;
+  background: #fafafa;
+  padding: 40px 0 0 0;
+  border-bottom: 1px dashed #eee;
+  text-align: center;
+}
+
+/* line 558, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+.paneled-bg h2 {
+  margin-bottom: 70px;
+}
+
+/* line 562, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #team-slider {
   width: 1200px;
   margin: 24px auto 86px auto;
 }
 
-/* line 546, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 566, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team {
   position: relative;
   width: 300px;
@@ -1854,7 +1879,7 @@ Team Section
   text-align: center;
 }
 
-/* line 555, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 575, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team-photo img {
   max-width: 100%;
   height: auto;
@@ -1865,7 +1890,7 @@ Team Section
   transition: all 300ms linear;
 }
 
-/* line 564, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 584, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team:hover .team-photo img {
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
@@ -1874,26 +1899,27 @@ Team Section
   transform: scale(0);
 }
 
-/* line 571, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 591, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team h4 {
   line-height: 24px;
 }
 
-/* line 572, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 592, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team h6 {
   text-transform: uppercase;
 }
 
-/* line 574, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 594, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team-title {
   position: absolute;
   z-index: 1;
   left: 0px;
   right: 0px;
-  top: 305px;
+  top: 320px;
   background: #f8f8f8;
-  padding-top: 25px;
-  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  padding-top: 15px;
+  margin-bottom: 14px;
   -webkit-transition: all 300ms linear;
   -moz-transition: all 300ms linear;
   -o-transition: all 300ms linear;
@@ -1901,13 +1927,13 @@ Team Section
   transition: all 300ms linear;
 }
 
-/* line 589, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 610, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team:hover .team-title {
-  top: 30px;
-  padding-top: 0;
+  top: 0px;
+  padding-top: 15px;
 }
 
-/* line 590, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 611, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team .team-info {
   position: absolute;
   z-index: 1;
@@ -1925,38 +1951,38 @@ Team Section
   transition: all 300ms linear;
 }
 
-/* line 606, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 627, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team:hover .team-info {
   top: 105px;
 }
 
-/* line 607, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 628, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team .team-info p {
   margin-bottom: 32px;
 }
 
-/* line 609, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 630, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team-social-links li {
   display: inline-block;
 }
 
-/* line 610, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 631, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .team-social-links .social-btn {
   background: #F8F8F8;
 }
 
-/* line 612, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 633, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .owl-buttons div {
   opacity: 1 !important;
 }
 
-/* line 616, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 637, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .owl-next,
 .owl-prev {
   visibility: hidden;
 }
 
-/* line 620, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 641, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .owl-next:after,
 .owl-prev:after {
   visibility: visible;
@@ -1979,12 +2005,12 @@ Team Section
   transition: all 300ms linear;
 }
 
-/* line 640, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 661, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .owl-prev:after {
   content: "\2039";
 }
 
-/* line 641, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 662, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .owl-next:after {
   content: "\203A";
 }
@@ -1992,7 +2018,7 @@ Team Section
 /* --------------------------------
 Call Out
 -------------------------------- */
-/* line 648, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 669, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .call-out a.button {
   font-size: 21px;
   margin-left: 16px;
@@ -2002,7 +2028,7 @@ Call Out
 /* --------------------------------
 Services Section
 -------------------------------- */
-/* line 659, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 680, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #services {
   background: url(/assets/parallax/chicago-skyline-darkcolored.jpg) left top fixed;
   padding: 0 0 32px 0;
@@ -2011,18 +2037,18 @@ Services Section
   color: #b5b5b5;
 }
 
-/* line 668, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 689, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #services .container .row, #process .container .row {
   margin: 56px 0;
 }
 
-/* line 671, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 692, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .service-item {
   cursor: default;
   padding: 0 24px;
 }
 
-/* line 675, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 696, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .service-item i {
   margin-bottom: 8px;
   -webkit-transition: all 0.4s;
@@ -2030,23 +2056,23 @@ Services Section
   transition: all 0.4s;
 }
 
-/* line 681, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 702, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .service-item i {
   color: #fff;
 }
 
-/* line 682, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 703, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .service-item:hover i {
   color: #aaaaaa;
 }
 
-/* line 683, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 704, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .service-item h5 {
   color: #fff;
   line-height: 12px;
 }
 
-/* line 687, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 708, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .service-item .divider {
   height: 2px;
   display: block;
@@ -2059,7 +2085,7 @@ Services Section
 }
 
 /* Mockup Sliders */
-/* line 699, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 720, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .mockup-tablet {
   background: transparent;
   width: 460px;
@@ -2068,7 +2094,7 @@ Services Section
   padding-left: 1px;
 }
 
-/* line 706, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 727, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .mockup-tablet .owl-pagination {
   position: absolute;
   text-align: center;
@@ -2077,7 +2103,7 @@ Services Section
   z-index: 20;
 }
 
-/* line 714, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 735, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .mockup-monitor {
   background: url(/images/mockup-monitor.png) no-repeat;
   width: 550px;
@@ -2085,7 +2111,7 @@ Services Section
   padding-top: 30px;
 }
 
-/* line 720, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 741, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .mockup-monitor .owl-pagination {
   position: absolute;
   text-align: center;
@@ -2097,36 +2123,37 @@ Services Section
 /* --------------------------------
 Portfolio Section
 -------------------------------- */
-/* line 733, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 754, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #portfolio {
   height: auto;
 }
 
-/* line 734, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 755, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #portfolio-container {
   height: auto;
   padding: 20px 0 64px 0;
 }
 
-/* line 738, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 759, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #portfolio-title {
   padding: 56px 0 20px 0 !important;
 }
 
-/* line 739, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 760, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #portfolio-title h4.subtitle {
   margin-bottom: 0 !important;
 }
 
-/* line 741, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 762, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item {
-  width: 20%;
+  width: 50%;
   height: auto;
   position: relative;
   overflow: hidden;
   display: inline-block;
   border-right: 1px solid #f5f5f5;
   border-left: 1px solid #fafafa;
+  border-bottom: 1px solid #fafafa;
   -webkit-transition: all 300ms linear;
   -moz-transition: all 300ms linear;
   -o-transition: all 300ms linear;
@@ -2134,7 +2161,7 @@ Portfolio Section
   transition: all 300ms linear;
 }
 
-/* line 756, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 778, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item img {
   max-width: 100%;
   height: auto;
@@ -2146,7 +2173,7 @@ Portfolio Section
   transition: all 300ms linear;
 }
 
-/* line 766, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 788, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item:hover img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -2156,7 +2183,7 @@ Portfolio Section
   cursor: pointer;
 }
 
-/* line 774, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 796, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item .mask {
   position: absolute;
   background: rgba(47, 47, 47, 0.05);
@@ -2173,12 +2200,12 @@ Portfolio Section
   transition: all 200ms linear;
 }
 
-/* line 789, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 811, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item:hover .mask {
   opacity: 1;
 }
 
-/* line 792, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 814, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item .mask a {
   position: absolute;
   top: 45%;
@@ -2186,27 +2213,28 @@ Portfolio Section
   color: #fff;
 }
 
-/* line 798, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 820, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item .mask a.zoom {
   left: 40%;
 }
 
-/* line 799, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 821, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item .mask a.expander {
   right: 40%;
 }
 
-/* line 800, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 822, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item h5 {
   position: absolute;
-  bottom: 45%;
+  bottom: 50%;
   z-index: 100;
   color: #111;
+  padding: 0 20px;
   text-align: center;
   width: 100%;
 }
 
-/* line 808, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 831, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item p {
   position: absolute;
   bottom: 30%;
@@ -2217,25 +2245,26 @@ Portfolio Section
   cursor: pointer;
 }
 
-/* line 817, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 840, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item:hover h5 {
   color: #ccc;
   cursor: pointer;
 }
 
 /* Isotope Filter Styles */
-/* line 824, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 847, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .container.filter-menu {
   padding: 24px 0 0 0;
+  width: 100%;
 }
 
-/* line 828, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 852, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .option-set li {
   display: inline-block;
   margin: 0 8px 32px 0;
 }
 
-/* line 832, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 856, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .option-set li a {
   padding: 4px 8px;
   color: #6c6c6c;
@@ -2248,7 +2277,7 @@ Portfolio Section
   border-radius: 3px;
 }
 
-/* line 845, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 869, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .option-set li a.selected,
 .option-set li a:hover {
   color: #fff !important;
@@ -2257,19 +2286,19 @@ Portfolio Section
 }
 
 /* Isotope styles */
-/* line 853, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 877, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 854, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 878, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /* Isotope CSS3 transitions */
-/* line 862, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 886, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.7s;
@@ -2279,7 +2308,7 @@ Portfolio Section
   transition-duration: 0.7s;
 }
 
-/* line 870, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 894, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -2288,7 +2317,7 @@ Portfolio Section
   transition-property: height, width;
 }
 
-/* line 878, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 902, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -2298,7 +2327,7 @@ Portfolio Section
 }
 
 /* Disable Isotope CSS3 transitions */
-/* line 890, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 914, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -2312,7 +2341,7 @@ Portfolio Section
 /* --------------------------------
 Portfolio Project Expander
 -------------------------------- */
-/* line 902, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 926, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .item-expander {
   position: relative;
   display: none;
@@ -2322,7 +2351,7 @@ Portfolio Project Expander
   margin: 36px auto;
 }
 
-/* line 910, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 934, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #item-expander {
   max-width: 1170px;
   margin: 0 auto;
@@ -2331,23 +2360,23 @@ Portfolio Project Expander
   overflow: hidden;
 }
 
-/* line 917, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 941, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .portfolio-project {
   padding: 16px 0 64px 0;
 }
 
-/* line 920, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 944, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .portfolio-project h4 {
   color: #fff;
 }
 
-/* line 921, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 945, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .portfolio-project h5 {
   color: #fff;
   margin-top: 32px;
 }
 
-/* line 922, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 946, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .close-btn {
   width: 100%;
   padding: 0;
@@ -2357,7 +2386,7 @@ Portfolio Project Expander
   text-align: right;
 }
 
-/* line 930, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 954, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .close-btn .close {
   display: inline-block;
   width: 15px;
@@ -2375,32 +2404,32 @@ Portfolio Project Expander
   transition: all 0.3s;
 }
 
-/* line 946, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 970, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .close-btn .close:hover {
   background: #3d3d3d url(/images/close-btn.png) center center no-repeat;
   opacity: 1;
 }
 
-/* line 950, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 974, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project div.project-slides div.slide img {
   width: 100%;
 }
 
 /* Flex Slider Direction Nav */
-/* line 954, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 978, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project {
   position: relative;
   text-align: left;
 }
 
-/* line 958, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 982, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project ul.flex-direction-nav {
   display: block;
   opacity: 1;
   width: 100% !important;
 }
 
-/* line 963, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 987, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project ul.flex-direction-nav li a {
   position: absolute;
   width: 32px;
@@ -2409,7 +2438,7 @@ Portfolio Project Expander
   opacity: 0.7;
 }
 
-/* line 970, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 994, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project ul.flex-direction-nav li a.flex-prev {
   background: #2f2f2f url(/assets/arrow-left.png) center center no-repeat;
   left: 0;
@@ -2421,7 +2450,7 @@ Portfolio Project Expander
   border-bottom-right-radius: 3px;
 }
 
-/* line 980, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1004, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project ul.flex-direction-nav li a.flex-next {
   background: #2f2f2f url(/assets/arrow-right.png) center center no-repeat;
   right: 0;
@@ -2433,13 +2462,13 @@ Portfolio Project Expander
   border-bottom-left-radius: 3px;
 }
 
-/* line 990, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1014, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project ul.flex-direction-nav li a:hover {
   opacity: 1;
 }
 
 /* Flex Slider Control Nav */
-/* line 994, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1018, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ol.flex-control-nav {
   position: absolute;
   bottom: 0;
@@ -2447,7 +2476,7 @@ ol.flex-control-nav {
   z-index: 2;
 }
 
-/* line 1000, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1024, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ol.flex-control-paging li a {
   width: 8px;
   height: 8px;
@@ -2459,36 +2488,36 @@ ol.flex-control-paging li a {
   box-shadow: none;
 }
 
-/* line 1010, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1034, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ol.flex-control-paging li a:hover {
   background: #2f2f2f;
   background: rgba(47, 47, 47, 0.7);
 }
 
-/* line 1014, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1038, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ol.flex-control-paging li a.flex-active {
   background: #2f2f2f;
   background: #2f2f2f;
 }
 
 /* Project Details */
-/* line 1021, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1045, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project-desc {
   text-align: left;
 }
 
-/* line 1022, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1046, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project-details li {
   padding: 8px 0;
   border-bottom: 1px solid #3d3d3d;
 }
 
-/* line 1026, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1050, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project-details li:last-child {
   border-bottom: none;
 }
 
-/* line 1027, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1051, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .project-details li strong {
   font-weight: 400;
   text-transform: uppercase;
@@ -2497,7 +2526,7 @@ ol.flex-control-paging li a.flex-active {
 /* --------------------------------
 Process Section
 -------------------------------- */
-/* line 1036, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1060, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #process {
   background: #fff;
   padding: 0;
@@ -2505,7 +2534,7 @@ Process Section
   overflow: hidden;
 }
 
-/* line 1042, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1066, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .process-col {
   color: #8e8e8e;
   padding: 0 24px;
@@ -2516,12 +2545,12 @@ Process Section
   transition: all 300ms linear;
 }
 
-/* line 1051, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1075, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .process-col .icon-box {
   height: 64px;
 }
 
-/* line 1052, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1076, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .process-col i {
   -webkit-transition: all 300ms linear;
   -moz-transition: all 300ms linear;
@@ -2530,7 +2559,7 @@ Process Section
   transition: all 300ms linear;
 }
 
-/* line 1059, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1083, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .process-col h5 {
   color: #fff;
 }
@@ -2538,7 +2567,7 @@ Process Section
 /* --------------------------------
 Strategy Section
 -------------------------------- */
-/* line 1065, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1089, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #strategy {
   background: url(/assets/pattern-2.png) left top repeat, url(/assets/parallax/chicago-skyline-darkcolored.jpg) center center fixed;
   padding: 0 0 32px 0;
@@ -2546,17 +2575,17 @@ Strategy Section
   overflow: hidden;
 }
 
-/* line 1073, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1097, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #strategy .title {
   color: #fff;
 }
 
-/* line 1074, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1098, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #strategy .subtitle {
   color: #fff;
 }
 
-/* line 1075, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1099, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .process-col {
   color: #8e8e8e;
   padding: 0 24px;
@@ -2567,7 +2596,7 @@ Strategy Section
   transition: all 300ms linear;
 }
 
-/* line 1084, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1108, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .process-col .icon-box {
   height: 64px;
 }
@@ -2575,12 +2604,12 @@ Strategy Section
 /* --------------------------------
 History Section
 -------------------------------- */
-/* line 1090, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1114, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #history h2 {
   margin-bottom: 36px;
 }
 
-/* line 1091, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1115, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #history .columns {
   padding: 0 24px;
 }
@@ -2588,7 +2617,7 @@ History Section
 /* --------------------------------
 Counters
 -------------------------------- */
-/* line 1097, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1121, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .count h1 {
   font-size: 56px;
 }
@@ -2596,17 +2625,17 @@ Counters
 /* --------------------------------
 Pricing Tables
 -------------------------------- */
-/* line 1103, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1127, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table {
   background: #E8E8E8;
 }
 
-/* line 1106, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1130, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table:hover h4, .price-table h4.selected {
   color: #960000;
 }
 
-/* line 1109, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1133, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table h4 {
   position: relative;
   display: block;
@@ -2620,14 +2649,14 @@ Pricing Tables
   transition: all 0.2s;
 }
 
-/* line 1121, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1145, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table h4 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-/* line 1126, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1150, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table h4:after {
   top: 100%;
   left: 50%;
@@ -2643,12 +2672,12 @@ Pricing Tables
   margin-left: -16px;
 }
 
-/* line 1140, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1164, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table-container {
   padding: 24px;
 }
 
-/* line 1141, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1165, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -2657,24 +2686,24 @@ Pricing Tables
   font-weight: 400;
 }
 
-/* line 1148, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1172, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price span.dollar {
   vertical-align: super;
   font-size: 24px;
   font-weight: 400;
 }
 
-/* line 1153, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1177, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table p {
   font-size: 14px;
 }
 
-/* line 1154, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1178, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table ul {
   margin-top: 16px;
 }
 
-/* line 1155, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1179, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table ul li {
   border-bottom: 1px dashed #C4C4C4;
   padding: 8px 0;
@@ -2683,12 +2712,12 @@ Pricing Tables
   cursor: default;
 }
 
-/* line 1162, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1186, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .price-table ul li:last-child {
   border-bottom: none;
 }
 
-/* line 1163, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1187, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.price-button {
   background: #6c6c6c;
   color: #fff;
@@ -2699,7 +2728,7 @@ a.price-button {
   font-weight: 400;
 }
 
-/* line 1172, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1196, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.price-button:hover, a.price-button.selected {
   background: #2f2f2f;
   color: #960000;
@@ -2708,22 +2737,22 @@ a.price-button:hover, a.price-button.selected {
 /* --------------------------------
 Accordion
 -------------------------------- */
-/* line 1182, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1206, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #accordion img.mockup {
   width: 425px;
 }
 
-/* line 1184, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1208, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .accordion {
   background: url(/assets/pattern-2.png) left top repeat, url(/assets/parallax/parallax-bg-4.jpg) center center fixed;
 }
 
-/* line 1189, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1213, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .accordion-container {
   text-align: left;
 }
 
-/* line 1190, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1214, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .accordion-button {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -2735,22 +2764,22 @@ Accordion
   padding: 8px;
 }
 
-/* line 1200, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1224, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .accordion-button:hover {
   color: #960000;
 }
 
-/* line 1201, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1225, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .accordion-button i {
   margin-right: 8px;
 }
 
-/* line 1202, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1226, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .accordion-button i.fa-arrow-circle-o-down {
   color: #960000;
 }
 
-/* line 1203, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1227, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .accordion-content {
   border-left: 1px solid #d0d0d0;
   border-right: 1px solid #d0d0d0;
@@ -2762,13 +2791,13 @@ Accordion
 /* --------------------------------
 Timeline
 -------------------------------- */
-/* line 1217, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1241, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .timeline,
 .timeline .timeline-item {
   width: 100%;
 }
 
-/* line 1219, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1243, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .timeline .timeline-item .info,
 .timeline .timeline-item .year {
   color: #ededed;
@@ -2779,7 +2808,7 @@ Timeline
   transition: all 1s ease;
 }
 
-/* line 1228, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1252, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .timeline .timeline-item.close .info,
 .timeline .timeline-item.close .year {
   color: #c8c8c8;
@@ -2788,7 +2817,7 @@ Timeline
   transition: all 1s ease;
 }
 
-/* line 1234, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1258, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .timeline .timeline-item .year {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -2796,7 +2825,7 @@ Timeline
   width: 25%;
 }
 
-/* line 1240, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1264, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .timeline .timeline-item .info {
   width: 75%;
   margin-left: 0px;
@@ -2804,7 +2833,7 @@ Timeline
   border-left: 5px solid #939393;
 }
 
-/* line 1246, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1270, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .timeline .timeline-item .marker {
   background-color: #fff;
   border: 4px solid #939393;
@@ -2818,7 +2847,7 @@ Timeline
   position: relative;
 }
 
-/* line 1259, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1283, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .timeline .timeline-item.active .info,
 .timeline .timeline-item:hover .info {
   color: #939393;
@@ -2827,7 +2856,7 @@ Timeline
   transition: all 1s ease;
 }
 
-/* line 1266, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1290, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .timeline .timeline-item .marker .dot {
   background-color: white;
   -webkit-transition: all 1s ease;
@@ -2843,7 +2872,7 @@ Timeline
   position: relative;
 }
 
-/* line 1281, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1305, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .timeline .timeline-item.active .marker .dot,
 .timeline .timeline-item:hover .marker .dot {
   -webkit-transition: all 1s ease;
@@ -2854,7 +2883,7 @@ Timeline
 /* --------------------------------
 Percentage Bars (Skill Bars)
 -------------------------------- */
-/* line 1292, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1316, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .skillbar, .modal-skillbar {
   position: relative;
   display: block;
@@ -2877,7 +2906,7 @@ Percentage Bars (Skill Bars)
   transition-property: width, background-color;
 }
 
-/* line 1314, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1338, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .skillbar-title {
   position: absolute;
   top: 0;
@@ -2895,7 +2924,7 @@ Percentage Bars (Skill Bars)
   border-bottom-left-radius: 3px;
 }
 
-/* line 1331, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1355, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .skillbar-title span {
   display: block;
   background: rgba(0, 0, 0, 0.1);
@@ -2910,7 +2939,7 @@ Percentage Bars (Skill Bars)
   border-bottom-left-radius: 3px;
 }
 
-/* line 1345, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1369, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .skillbar-bar {
   height: 24px;
   width: 0px;
@@ -2920,7 +2949,7 @@ Percentage Bars (Skill Bars)
   -webkit-border-radius: 3px;
 }
 
-/* line 1354, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1378, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .skill-bar-percent {
   position: absolute;
   right: 10px;
@@ -2935,7 +2964,7 @@ Percentage Bars (Skill Bars)
 /* --------------------------------
 Gauges
 -------------------------------- */
-/* line 1369, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1393, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #guage1, #guage2, #guage3, #guage4, #guage5, #guage6 {
   width: 200px;
   height: 160px;
@@ -2946,7 +2975,7 @@ Gauges
 /* --------------------------------
 Video Section
 -------------------------------- */
-/* line 1379, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1403, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .full-video {
   position: relative;
   overflow: hidden;
@@ -2956,7 +2985,7 @@ Video Section
   padding-top: 300px;
 }
 
-/* line 1387, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1411, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .full-video:after {
   background: rgba(255, 255, 255, 0.7) url(/assets/pattern-1.png) repeat;
   position: absolute;
@@ -2967,7 +2996,7 @@ Video Section
   height: 100%;
 }
 
-/* line 1398, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1422, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .video-msg {
   z-index: 2;
   text-align: center;
@@ -2976,7 +3005,7 @@ Video Section
   margin: 0 auto;
 }
 
-/* line 1405, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1429, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .video-msg h1 {
   color: #fff;
   margin-bottom: 24px;
@@ -2985,24 +3014,24 @@ Video Section
 /* --------------------------------
 Blog
 -------------------------------- */
-/* line 1414, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1438, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-preview {
   text-align: left;
   padding: 0 24px;
 }
 
-/* line 1418, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1442, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-title {
   font-size: 24px;
   line-height: 32px;
 }
 
-/* line 1422, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1446, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-meta {
   margin: 8px 0 16px 0;
 }
 
-/* line 1423, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1447, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-meta li {
   display: inline-block;
   font-size: 12px;
@@ -3011,17 +3040,17 @@ Blog
   margin-right: 8px;
 }
 
-/* line 1430, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1454, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-meta li a {
   color: #6c6c6c;
 }
 
-/* line 1431, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1455, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-meta li i {
   margin-right: 4px;
 }
 
-/* line 1433, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1457, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img {
   position: relative;
   overflow: hidden;
@@ -3034,7 +3063,7 @@ Blog
   transition: all 300ms linear;
 }
 
-/* line 1445, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1469, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img img {
   max-width: 100%;
   height: auto;
@@ -3046,7 +3075,7 @@ Blog
   transition: all 300ms linear;
 }
 
-/* line 1455, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1479, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img:hover img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -3055,7 +3084,7 @@ Blog
   transform: scale(1.1);
 }
 
-/* line 1462, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1486, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img .mask {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -3072,12 +3101,12 @@ Blog
   transition: all 200ms linear;
 }
 
-/* line 1477, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1501, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img:hover .mask {
   opacity: 1;
 }
 
-/* line 1480, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1504, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img i {
   position: absolute;
   top: 35%;
@@ -3087,13 +3116,13 @@ Blog
   color: #fff;
 }
 
-/* line 1488, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1512, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img-lrg i {
   top: 50%;
   margin-top: -15px;
 }
 
-/* line 1492, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1516, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img h5 {
   position: absolute;
   bottom: -100px;
@@ -3109,18 +3138,18 @@ Blog
   transition: all 400ms linear;
 }
 
-/* line 1506, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1530, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img:hover h5 {
   bottom: 10px;
   opacity: 1;
 }
 
-/* line 1510, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1534, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .post-img-lrg:hover h5 {
   bottom: 30px;
 }
 
-/* line 1513, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1537, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .full-blog-link {
   display: block;
   clear: both;
@@ -3128,49 +3157,49 @@ Blog
 }
 
 /* Blog Pages */
-/* line 1521, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1545, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 article.blog-post {
   padding-bottom: 32px;
   margin-bottom: 40px;
   border-bottom: 1px solid rgba(108, 108, 108, 0.2);
 }
 
-/* line 1526, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1550, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .sub-page article.blog-post:last-child {
   border-bottom: none;
 }
 
-/* line 1528, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1552, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 section.sidebar-content {
   margin-bottom: 48px;
 }
 
-/* line 1532, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1556, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ul.blog-categories li {
   border-bottom: 1px solid rgba(108, 108, 108, 0.2);
 }
 
-/* line 1535, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1559, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ul.blog-categories li a {
   display: block;
   padding: 16px 8px;
   color: #2f2f2f;
 }
 
-/* line 1540, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1564, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ul.blog-categories li a:before {
   content: "\203A";
   font-weight: 400;
   margin-right: 8px;
 }
 
-/* line 1545, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1569, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ul.blog-categories li a:hover {
   color: #fff;
   background: #2f2f2f;
 }
 
-/* line 1549, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1573, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.blog-tag {
   display: inline-block;
   background: #ecf0f1;
@@ -3182,52 +3211,52 @@ a.blog-tag {
   border-radius: 3px;
 }
 
-/* line 1559, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1583, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.blog-tag:hover {
   color: #fff;
   background: #2f2f2f;
 }
 
-/* line 1563, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1587, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ul.content-list {
   margin: 16px;
 }
 
-/* line 1564, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1588, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ul.content-list li {
   padding: 4px;
 }
 
-/* line 1567, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1591, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ul.content-list li:before {
   content: "\203A";
   margin-right: 8px;
 }
 
-/* line 1571, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1595, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .about-author {
   padding: 0 0 32px 0;
   border-bottom: 1px solid rgba(108, 108, 108, 0.2);
 }
 
-/* line 1575, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1599, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .comments {
   padding-top: 32px;
 }
 
-/* line 1576, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1600, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ul.comment-list li {
   position: relative;
   padding: 32px 0 32px 80px;
   border-bottom: 1px solid rgba(108, 108, 108, 0.2);
 }
 
-/* line 1581, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1605, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 ul.comment-list li:last-child {
   border-bottom: none;
 }
 
-/* line 1582, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1606, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .comment-author {
   font-weight: 700;
   text-transform: uppercase;
@@ -3235,7 +3264,7 @@ ul.comment-list li:last-child {
   margin-right: 8px;
 }
 
-/* line 1588, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1612, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 img.comment-avatar {
   position: absolute;
   top: 38px;
@@ -3244,7 +3273,7 @@ img.comment-avatar {
   height: 64px;
 }
 
-/* line 1595, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1619, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .comment-date {
   display: block;
   font-style: italic;
@@ -3253,7 +3282,7 @@ img.comment-avatar {
 /* --------------------------------
 Clients Section
 -------------------------------- */
-/* line 1603, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1627, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .clients {
   background: url(/assets/pattern-2.png) left top repeat, url(/assets/parallax/parallax-bg-3.jpg) center center fixed;
   padding: 0;
@@ -3261,7 +3290,7 @@ Clients Section
   overflow: hidden;
 }
 
-/* line 1611, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1635, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .clients .subtle-header {
   font-style: italic;
   color: #ddd;
@@ -3271,23 +3300,23 @@ Clients Section
   margin-bottom: -20px;
 }
 
-/* line 1619, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1643, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .clients .subtitle {
   color: #fff;
 }
 
-/* line 1620, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1644, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #client-slider {
   width: 1200px;
   margin: 64px auto 56px auto;
 }
 
-/* line 1624, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1648, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #client-slider .client-item {
   width: 130px;
 }
 
-/* line 1625, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1649, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .clients img {
   opacity: .5;
   -webkit-transform: scale(1);
@@ -3302,7 +3331,7 @@ Clients Section
   transition: all 300ms linear;
 }
 
-/* line 1638, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1662, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .clients img:hover {
   opacity: 1;
   -webkit-transform: scale(1.1);
@@ -3315,7 +3344,7 @@ Clients Section
 /* --------------------------------
 Featured Projects Section
 -------------------------------- */
-/* line 1651, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1675, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .featured {
   background: url(/assets/pattern-1.png) left top repeat, url(/assets/parallax/parallax-bg-4.jpg) center center fixed;
   padding: 0;
@@ -3323,7 +3352,7 @@ Featured Projects Section
   overflow: hidden;
 }
 
-/* line 1659, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1683, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #featured-title {
   padding: 56px 0 20px 0 !important;
   text-align: center;
@@ -3331,24 +3360,24 @@ Featured Projects Section
   margin: 0 auto;
 }
 
-/* line 1665, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1689, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #featured-title .subtitle {
   color: #fff;
 }
 
-/* line 1666, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1690, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #work-slider {
   width: 100%;
   margin: 0 auto 56px auto;
 }
 
-/* line 1670, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1694, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #work-slider .work-item {
   width: 95%;
   position: relative;
 }
 
-/* line 1674, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1698, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #work-slider .work-item img {
   -webkit-transition: all 300ms linear;
   -moz-transition: all 300ms linear;
@@ -3357,7 +3386,7 @@ Featured Projects Section
   transition: all 300ms linear;
 }
 
-/* line 1683, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1707, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #work-slider .work-item .zoom {
   position: absolute;
   background: rgba(216, 216, 216, 0.9);
@@ -3374,17 +3403,17 @@ Featured Projects Section
   border-radius: 30px;
 }
 
-/* line 1698, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1722, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #work-slider .work-item:hover .zoom {
   opacity: 1;
 }
 
-/* line 1701, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1725, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #work-slider .work-item .zoom:hover {
   background: rgba(40, 40, 40, 0.9);
 }
 
-/* line 1705, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1729, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #featured .owl-next:after,
 #featured .owl-prev:after {
   background: #292929;
@@ -3393,7 +3422,7 @@ Featured Projects Section
 /* --------------------------------
 Contact Section
 -------------------------------- */
-/* line 1715, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1739, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -3407,13 +3436,13 @@ Contact Section
   border-radius: 3px;
 }
 
-/* line 1726, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1750, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .contact-form textarea {
   height: 209px;
   max-height: 209px;
 }
 
-/* line 1731, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1755, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
@@ -3422,13 +3451,13 @@ Contact Section
   background: rgba(47, 47, 47, 0.1);
 }
 
-/* line 1738, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1762, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .contact-form input:hover,
 .contact-form textarea:hover {
   background: rgba(47, 47, 47, 0.1);
 }
 
-/* line 1741, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1765, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 button#submit {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
@@ -3446,25 +3475,25 @@ button#submit {
   border-radius: 3px;
 }
 
-/* line 1757, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1781, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 button#submit:hover {
   background: #6c6c6c;
   border: 1px solid #6c6c6c;
 }
 
-/* line 1761, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1785, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 button#submit:focus {
   outline: none;
 }
 
 /* Contact Form Messages */
-/* line 1767, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1791, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .error-container {
   display: block;
   margin-bottom: 24px;
 }
 
-/* line 1771, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1795, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .error {
   color: #960000;
   display: none;
@@ -3473,7 +3502,7 @@ button#submit:focus {
   font-size: 16px;
 }
 
-/* line 1778, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1802, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .success {
   color: #27ae60;
   display: none;
@@ -3485,12 +3514,12 @@ button#submit:focus {
 /* --------------------------------
 Google Map
 -------------------------------- */
-/* line 1790, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1814, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #map {
   border-bottom: 1px solid rgba(108, 108, 108, 0.4);
 }
 
-/* line 1791, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1815, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #google-map {
   position: relative;
   opacity: .9;
@@ -3506,26 +3535,26 @@ Google Map
   /* IE 6-9 */
 }
 
-/* line 1805, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1829, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #map-tooltip {
   padding-top: 24px;
   text-align: center;
 }
 
-/* line 1809, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1833, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #map-tooltip h5 {
   margin-bottom: 0;
   line-height: 16px;
 }
 
-/* line 1813, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1837, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #map .callout {
   background: #2f2f2f;
   width: 100%;
   margin-bottom: 0;
 }
 
-/* line 1818, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1842, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #map .callout .container {
   padding: 16px 0;
 }
@@ -3533,24 +3562,24 @@ Google Map
 /* -------------------------------
 Job Form
 ---------------------------------*/
-/* line 1823, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1847, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #job .callout {
   background: url(/assets/pattern-2.png) left top repeat, url(/assets/parallax/chicago-skyline-darkcolored.jpg) center center fixed;
   padding: 40px 0 0 0;
   overflow: hidden;
 }
 
-/* line 1830, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1854, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #job .title {
   color: #fff;
 }
 
-/* line 1831, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1855, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #job .subtitle {
   color: #fff;
 }
 
-/* line 1832, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1856, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #job p {
   width: 60%;
   min-width: 300px;
@@ -3558,7 +3587,7 @@ Job Form
   text-align: left;
 }
 
-/* line 1833, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1857, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #job ul {
   list-style: disc;
   width: 60%;
@@ -3570,18 +3599,18 @@ Job Form
 /* --------------------------------
 Social Media
 -------------------------------- */
-/* line 1838, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1862, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .social .social-links {
   margin-bottom: 24px;
 }
 
-/* line 1839, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1863, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .social .social-links li {
   display: inline-block;
   margin: 0 4px;
 }
 
-/* line 1843, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1867, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .social .social-links li a {
   display: block;
   padding: 12px 0;
@@ -3593,15 +3622,10 @@ Social Media
   border-radius: 3px;
 }
 
-/* line 1854, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
-.text-section p {
-  font-size: 18px;
-}
-
 /* --------------------------------
 Extras
 -------------------------------- */
-/* line 1862, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1881, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 .red-bar {
   color: #960000 !important;
 }
@@ -3609,29 +3633,29 @@ Extras
 /* --------------------------------
 Footer
 -------------------------------- */
-/* line 1871, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1890, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #footer-bottom {
   position: relative;
   background: #aaa;
   color: #fff;
 }
 
-/* line 1876, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1895, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #footer-bottom a {
   color: #777 !important;
 }
 
-/* line 1879, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1898, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #footer-bottom .container {
   padding: 24px 0;
 }
 
-/* line 1880, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1899, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 #footer-bottom h2 {
   color: #fff;
 }
 
-/* line 1881, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1900, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.button-to-top {
   position: absolute;
   top: -20px;
@@ -3648,7 +3672,7 @@ a.button-to-top {
   border-radius: 3px;
 }
 
-/* line 1896, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
+/* line 1915, /Users/scottkacyn/Development/wells_blair/app/assets/stylesheets/layout.css.scss */
 a.button-to-top:hover {
   color: #960000;
 }
@@ -6207,7 +6231,7 @@ a.button-to-top:hover {
 	.headertext{width: 550px;}
 	.team-photo ul.team-social-links{bottom: 10px;}
 	.team-photo ul.team-social-links li{margin: 0 2px;}
-	.item h5, .team-photo h6, .post-img h5 {display: none;}
+	.team-photo h6, .post-img h5 {display: none;}
 	.item .mask a.zoom{left:55%;} 
 	.item .mask a.expander{ right:55%;} 
 
@@ -6295,7 +6319,7 @@ a.button-to-top:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 567px) {
 	.header{padding-top: 100px;}
-	.headertext-slider{width: 250px !important;}
+	.headertext-slider{width: 100% !important;}
 	a.header-down-arrow {display: none;}
 	.title { font-size: 30px; line-height: 48px; }
 	.subtitle { font-size: 22px; line-height: 28px; }
