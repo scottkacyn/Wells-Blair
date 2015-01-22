@@ -3,7 +3,7 @@ class Job < ActiveRecord::Base
 	after_initialize :set_defaults
 
 	def set_defaults
-		self.description ||= '<p>Wells Blair is a leader in specialized tax recruitment solutions with markets in Chicago, IL and Houston, TX.  We have seen tremendous year after year growth since our inception in January 2008.  Due to this growth we are looking to make some significant additions to our tax recruiting team – these positions will be based in Houston, TX.</p>'
+		self.description ||= '<p>I’ve never caught a fox, with socks. One could say I’m a foxless, sockless jock. I used to be one of them, one of the good guys. I can’t say that now. I’m a bit darker than I used to be. Whether that was due to my constant struggle with diabetes or not, I’m not sure. Maybe it was my whore of a wife. Either way, I’m a bit colder than I used to be.</p>'
 	end
 
 end

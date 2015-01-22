@@ -34,33 +34,13 @@
 		<h4 class="subtitle" style="font-size:18px;">We ask questions. You ask questions.</h4>
 		<br>
 
-		<!-- Process Column -->
-		<div class="four columns process-col">
-			<div class="icon-box"><i class="fa fa-search fa-3x"></i></div>
-			<h5>Plan & Research</h5>
-			<p>This is the most important part of the search process. We develop an effective plan for each client and do our research to set the stage for a successful project.</p>
-		</div><!-- end process column -->
-
-		<!-- Process Column -->
-		<div class="four columns process-col">
-			<div class="icon-box"><i class="fa fa-group fa-3x"></i></div>
-			<h5>Source & Present</h5>
-			<p>Our expansive network allows us the ability to efficiently source and present qualified professionals at all levels within Tax.</p>
-		</div><!-- end process column -->
-
-		<!-- Process Column -->
-		<div class="four columns process-col">
-			<div class="icon-box"><i class="fa fa-calendar fa-3x"></i></div>
-			<h5>Schedule & Organize</h5>
-			<p>The process must be respected. We offer flexibility while at the same time delivering projects on-time and within budget.</p>
-		</div><!-- end process column -->
-
-		<!-- Process Column -->
-		<div class="four columns process-col">
-			<div class="icon-box"><i class="fa fa-check-square-o fa-3x"></i></div>
-			<h5>Negotiation & Delivery</h5>
-			<p>We implement proven strategies and expertise to help companies negotiate competitive compensation packages, which deliver top-performing human capital.</p>
-		</div><!-- end process column -->
+		<% @strategies.each do |strategy| %>
+			<div class="four columns process-col">
+				<div class="icon-box"><i class="fa fa-<%= strategy.icon %> fa-3x"></i></div>
+				<h5><%= strategy.title %></h5>
+				<p><%= strategy.description %></p>
+			</div>
+		<% end %>
 
 	</div><!-- end container -->
 </section><!-- end process -->
