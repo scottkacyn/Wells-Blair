@@ -2,6 +2,15 @@ ActiveAdmin.register Job do
 
   permit_params :title, :industry, :location, :description, :email, :market
 
+  index do
+    column :title
+    column :industry
+    column :location
+    column :market
+    column :email
+    actions
+  end
+
   form do |f|
     f.inputs "Job" do
       f.input :title
