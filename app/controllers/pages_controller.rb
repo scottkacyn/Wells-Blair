@@ -7,7 +7,7 @@ class PagesController < ApplicationController
 
   def client_solutions
     @headline = Headline.find_by(page: "Client Solutions") || Headline.new(page: "Client Solutions", title: "Specialized Tax Recruitment Solutions", subtitle: "With over 50 years of recruiting experience, the Wells Blair team can provide your tax department with the ideal end-to-end recruiting solution that will meet the challenges of your project, whether you are hiring one new position or building a new tax group. Attracting and retaining high-performing tax professionals is very challenging. We can provide your corporate tax department with proven strategies that many major companies are implementing to achieve world-class tax departments.")
-    @strategies = Strategy.all
+    @strategies = Strategy.all.order(:position => :asc)
   end
 
   def contact
