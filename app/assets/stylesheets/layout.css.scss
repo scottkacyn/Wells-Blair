@@ -49,7 +49,7 @@ button#submit {border:1px solid #960000;}
 .opportunities-container {
 	text-align: center;
 	background: #fafafa;
-	padding: 0 5%;
+	padding: 0 5% 50px 5%;
 }
 
 /* Call out titles */
@@ -475,6 +475,32 @@ a.icon-btn{
 a.icon-btn:hover{
 	color: #fff;
 	background: #939393;
+}
+
+/* Job Listings */
+
+.job-listings {
+	max-width: 700px;
+	margin: 20px auto;
+	text-align: left;
+}
+
+.job-listings .job-listing {
+	border-bottom: 1px solid #eee;
+	padding: 26px 20px 10px 20px;
+
+	h5 {
+		font-weight: bold;
+	}
+}
+
+.job-listing .job-listing-tag {
+	float: right;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: #960000;
+	color: #ffffff;
+	margin-top: -68px;
 }
 
 /* --------------------------------

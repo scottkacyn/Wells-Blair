@@ -36,6 +36,9 @@ $(document).on('ready page:load', function() {
   /* Slab text */
   $(".headertext").slabText({});
 
+  /* Set full height sections if necessary */
+  $('#full-height-section').css({'height':($(window).height())+'px'});
+
   /* Owl carousel */
   $(".headertext-slider").owlCarousel({
       navigation : false,
@@ -90,14 +93,6 @@ $(document).on('ready page:load', function() {
     $('.parallax5').parallax("50%", 0.5);
     $('.parallax6').parallax("50%", 0.5);
   }
-
-  /* Isotope shit */
-  var $container = $('.portfolio-items');
-
-  $container.isotope({
-    resizable: true, 
-    itemSelector : '.item'
-  });
         
   var $optionSets = $('#options .option-set'),
       $optionLinks = $optionSets.find('a');
@@ -155,11 +150,10 @@ $(document).on('ready page:load', function() {
 
     $('.error').hide(); 
 
-    var name = $('input#name').val();
-    var email = $('input#email').val();
-    var phone = $('input#phone').val();
+    var name = $('input#applicant_name').val();
+    var email = $('input#applicant_email').val();
+    var resume = $('input#applicant_resume').val();
     var email_compare = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; // compare to email input
-    var phone_compare = /^[0-9-+]+$/; // compare to phone input
 
     if (name == "" || name == " ") {
       $('#error-name').fadeIn('slow');
@@ -173,33 +167,12 @@ $(document).on('ready page:load', function() {
       $('#error-valid-email').fadeIn('slow');
       return false;
 
-    } else if (!phone_compare.test(phone)) {
-      $('#error-valid-phone').fadeIn('slow');
+    } else if (resume == "" || resume == " ") {
+      $('#error-resume').fadeIn('slow');
       return false;
+
     }
 
-    var data_string = $('#contact-us').serialize(); 
-
-    $.ajax({
-      type: "POST",
-      url: $('#contact-us').attr('action'),
-      data: data_string,
-      timeout: 6000,
-      error: function(request,error) {
-        if (error == "timeout") {
-          $('#error-timedout').slideDown('slow');
-        }
-        else {
-          $('#error-state').slideDown('slow');
-        }
-      },
-      success: function() {
-        $('#email-success').slideDown('slow');
-        $("#contact-us").trigger('reset');
-      }
-    });
-
-    return false;
   });
 
 });

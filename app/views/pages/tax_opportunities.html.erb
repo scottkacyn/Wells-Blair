@@ -10,25 +10,21 @@
 		<!-- Portfolio Filters -->
 		<div id="options" class="container filter-menu">
 			<ul id="filters" class="option-set" data-option-key="filter">
-				<li><a href="#filter" data-option-value="*" class="selected">All</a></li>
-				<li><a href="#filter" data-option-value=".chicago">Chicago</a></li>
-				<li><a href="#filter" data-option-value=".houston">Houston</a></li>
+				<li><a href="/opportunities" class="<%= params[:market].nil? ? 'selected' : ''%>">All</a></li>
+				<li><a href="/opportunities?market=Chicago" class="<%= params[:market] == 'Chicago' ? 'selected' : ''%>">Chicago</a></li>
+				<li><a href="/opportunities?market=Houston" class="<%= params[:market] == 'Houston' ? 'selected' : ''%>">Houston</a></li>
 			</ul>
 		</div>
 	
-		<div id="portfolio-container">
 		<!-- Portfolio Items -->
-			<div class="portfolio-items">
-				<% @jobs.each do |job| %>
-					<div class="item <%= (job.market == 'Chicago') ? 'chicago' : 'houston' %>">
-						<%= image_tag "project-1.jpg" %>
-						<div class="mask">
-						</div>
-						<h5><%= link_to job.title, job %></h5>
-						<p><%= job.industry + " | " if !job.industry.blank? %><%= job.location %></p>
-					</div>
-				<% end %>
-			</div>
-		</div><!-- end portfolio items -->
+		<div class="job-listings">
+			<% @jobs.each do |job| %>
+				<div class="job-listing <%= (job.market == 'Chicago') ? 'chicago' : 'houston' %>">
+					<h5><%= link_to job.title, job %></h5>
+					<p><%= job.location %> | <%= job.industry %></p>
+					<%= link_to "View More", job, :class => "job-listing-tag" %>
+				</div>
+			<% end %>
+		</div>
 	</div><!-- end container -->
 </section><!-- end portfolio section -->

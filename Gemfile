@@ -21,6 +21,9 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+gem 'paperclip', '~> 4.2'
+gem 'aws-sdk', '~> 1.5.7'
+
 gem 'rails_12factor', group: :production
 
 # Use jquery as the JavaScript library

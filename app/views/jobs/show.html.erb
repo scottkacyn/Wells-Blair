@@ -15,6 +15,7 @@
 			<div class="error-container">
 				<span class="error" id="error-name">Please enter your name</span>
 				<span class="error" id="error-email">Please enter your email</span>
+				<span class="error" id="error-resume">Please attach your resume</span>
 				<span class="error" id="error-valid-email">Your e-mail is not a valid format</span>
 				<span class="error" id="error-valid-phone">Your phone number is not a valid format</span>
 				<span class="error" id="error-timedout">The email submission timed out. Please try again.</span>
@@ -22,26 +23,26 @@
 				<span class="success" id="email-success">Message received! Thank you.</span>
 			</div><!-- end error messages -->
 
-			<form id="contact-us" method="post" action="php/mail.php">
-				
+			<%= form_for @applicant, id: "contact-us", html: {multipart: true} do |f| %>
+				<%= f.hidden_field :job_id, value: @job.id %>
 				<div class="eight columns">
-					<input type="text" name="name" id="name" required="required" placeholder="Name" />
-					<input type="email" name="email" id="email" required="required" placeholder="Email" />
-					<input type="text" name="phone" id="phone" placeholder="Phone" />
-					<input type="text" name="company" id="company" required="required" placeholder="Company" />
-					<input type="text" name="address" id="address" required="required" placeholder="Address" />
+					<%= f.text_field :name, placeholder: "Name" %>
+					<%= f.text_field :email, placeholder: "Email" %>
+					<%= f.text_field :phone, placeholder: "Phone (optional)" %>
+					<%= f.text_field :company, placeholder: "Company" %>
+					<%= f.text_field :address, placeholder: "Address" %>
 				</div>
-
 				<div class="eight columns">
-					<input type="text" name="city" id="city" placeholder="City" />
-					<input type="text" name="state" id="state" required="required" placeholder="State" />
-					<input type="text" name="zip" id="zip" required="required" placeholder="Zip" />
+					<%= f.text_field :city, placeholder: "City" %>
+					<%= f.text_field :state, placeholder: "State" %>
+					<%= f.text_field :zip, placeholder: "Zip" %>
 					<h5>Attach Your Resume</h5>
-					<input type="file"  name="resume" id="resume" required="required" placeholder="Upload Resume" />
+					<%= f.file_field :resume %>
 				</div>
 
-				<button type="submit" id="submit" name="submit">Submit Resume</button> 
-			</form>
+				<%= f.submit "Submit Application", id: "submit" %>
+			<% end %>
+			
 		</div><!-- end contact form -->
 
 	</div><!-- end container -->

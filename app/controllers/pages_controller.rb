@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   end
 
   def tax_opportunities
-    @jobs = Job.all
+    @jobs = params[:market] ? Job.where(market: params[:market]) : Job.all
     @headline = Headline.find_by(page: "Tax Opportunities") || Headline.new(page: "Tax Opportunities", title: "Tax Opportunities", subtitle: "Browse our open positions in Chicago and Houston.")
   end
 
