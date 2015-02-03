@@ -8,10 +8,16 @@ class InquiriesController < ApplicationController
     @inquiry.request = request
     if @inquiry.deliver
       flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
-      redirect_to root_path
+      redirect_to inquiry_success_path
     else
       flash.now[:error] = 'Cannot send message.'
-      redirect_to root_path
+      redirect_to inquiry_error_path
     end
+  end
+
+  def success
+  end
+
+  def error
   end
 end

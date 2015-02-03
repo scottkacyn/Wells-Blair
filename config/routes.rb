@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   resources :testimonials
 
   resources :inquiries, only: [:new, :create]
+  get '/inquiry-success'  => 'inquiries#success'
+  get '/inquiry-error'    => 'inquiries#error'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
