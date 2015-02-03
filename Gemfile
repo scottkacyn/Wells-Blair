@@ -21,6 +21,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+gem 'mail_form'
+
 gem 'paperclip', '~> 4.2'
 gem 'aws-sdk', '~> 1.5.7'
 

@@ -3,6 +3,7 @@ class PagesController < ApplicationController
     @headlines = HomepageHeadline.all
     @jobs = Job.all.limit(5)
     @contact = Headline.find_by(page: "Contact") || Headline.new(page: "Contact", title: "Start A Conversation", subtitle: "If you're a company looking for great talent or a tax specialist looking to improve your career, fill out the form below and we'll get in touch with you.")
+    @inquiry = Inquiry.new
   end
 
   def client_solutions
@@ -12,6 +13,7 @@ class PagesController < ApplicationController
 
   def contact
     @headline = Headline.find_by(page: "Contact") || Headline.new(page: "Contact", title: "Start A Conversation", subtitle: "If you're a company looking for great talent or a tax specialist looking to improve your career, fill out the form below and we'll get in touch with you.")
+    @inquiry = Inquiry.new
   end
 
   def tax_opportunities

@@ -19,20 +19,19 @@
 				<span class="success" id="email-success">Message received! Thank you.</span>
 			</div><!-- end error messages -->
 
-			<form id="contact-us" method="post" action="php/mail.php">
-				
+			<%= form_for @inquiry, :html => {:id => 'contact-us' } do |f| %>
 				<div class="eight columns">
-					<input type="text" name="name" id="name" required="required" placeholder="Name" />
-					<input type="email" name="email" id="email" required="required" placeholder="Email" />
-					<input type="text" name="phone" id="phone" placeholder="Phone" />
-				</div>
+			    	<%= f.text_field :name, :required => true, id: "name", placeholder: "Name" %>
+			    	<%= f.text_field :email, :required => true, id: "email", placeholder: "Email" %>
+			    	<%= f.text_field :phone, id: "phone", placeholder: "Phone (optional)" %>
+			    </div>
+			    <div class="eight columns">
+			    	<%= f.text_area :message, :required => true, placeholder: "Message" %>
+			    </div>
+			    </br>
+			    <%= f.submit "Send message", :class=> "btn btn-primary" %>
+			<% end %>
 
-				<div class="eight columns">
-				<textarea name="message" id="message" placeholder="Message"></textarea>
-				</div>
-
-				<button type="submit" id="submit" name="submit">Send Message</button> 
-			</form>
 		</div><!-- end contact form -->
 
 	</div><!-- end container -->
