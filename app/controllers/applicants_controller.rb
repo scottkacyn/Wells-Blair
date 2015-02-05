@@ -10,6 +10,11 @@ class ApplicantsController < ApplicationController
 		@applicant.resume = params[:applicant][:resume]
 
 		if @applicant.save
+
+			# Send email to job creator
+			ApplicantMailer.application_confirmation(@applicant, @job).deliver
+
+			# Redirect to success page
 			redirect_to @applicant
 		else
 			redirect_to @job

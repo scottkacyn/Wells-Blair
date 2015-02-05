@@ -125,6 +125,12 @@
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 567px) {
+	.job-listing .job-listing-tag {
+		margin-top: 0;
+		display: block;
+		float: none;
+		text-align: center;
+	}
 	.header{padding-top: 100px;}
 	.headertext-slider{width: 100% !important;}
 	a.header-down-arrow {display: none;}

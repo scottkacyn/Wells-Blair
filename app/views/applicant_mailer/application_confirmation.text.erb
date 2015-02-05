@@ -1,0 +1,9 @@
+We have a new job application:
+
+Job: <%= link_to @job.title, job_url(@job) %>
+
+Applicant: 
+<%= @applicant.name %>
+<%= @applicant.company %>
+<%= "#{@applicant.city}, #{@applicant.state}" %>
+<%= link_to "View Resume", @applicant.resume.url %>
