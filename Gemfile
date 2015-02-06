@@ -8,6 +8,10 @@ gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
+# Use the Puma web server in production
+gem 'puma'
+gem 'rack-timeout'
+
 # Active Admin
 gem 'devise', github: 'plataformatec/devise'
 gem 'activeadmin', github: 'activeadmin'
