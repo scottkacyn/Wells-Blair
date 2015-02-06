@@ -22,3 +22,6 @@
 # Ignore .env file so sensitive environment variables are not checked into Git.
 .env
 /config/local_env.yml
+
+# Ignore DSStore files
+.DS_Store
