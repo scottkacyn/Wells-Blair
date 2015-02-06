@@ -152,11 +152,14 @@ GEM
     pg (0.17.1)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
+    puma (2.11.0)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-cache (1.2)
       rack (>= 0.4)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rack-timeout (0.2.0)
     rails (4.1.6)
       actionmailer (= 4.1.6)
       actionpack (= 4.1.6)
@@ -236,6 +239,8 @@ DEPENDENCIES
   mail_form
   paperclip (~> 4.2)
   pg
+  puma
+  rack-timeout
   rails (= 4.1.6)
   rails_12factor
   sass-rails (~> 4.0.3)
