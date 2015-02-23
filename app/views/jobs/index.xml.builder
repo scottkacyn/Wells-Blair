@@ -16,6 +16,12 @@ xml.source do
 			xml.url do
 				xml.cdata! job_url(job)
 			end
+			xml.city do
+				xml.cdata! job.market
+			end
+			xml.state do
+				xml.cdata! job.market == "Chicago" ? "IL" : "TX"
+			end
 			xml.country do
 				xml.cdata! "US"
 			end
