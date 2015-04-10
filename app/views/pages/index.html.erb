@@ -88,9 +88,9 @@
 
 			<%= form_for @inquiry, :html => {:id => 'contact-us' } do |f| %>
 				<div class="eight columns">
-			    	<%= f.text_field :name, :required => true, id: "name", placeholder: "Name" %>
-			    	<%= f.text_field :email, :required => true, id: "email", placeholder: "Email" %>
-			    	<%= f.text_field :phone, id: "phone", placeholder: "Phone (optional)" %>
+			    	<%= f.text_field :name, :required => true, id: "name", placeholder: "Name", required: true %>
+			    	<%= f.text_field :email, :required => true, id: "email", placeholder: "Email", required: true %>
+			    	<%= f.text_field :phone, id: "phone", placeholder: "Phone", required: true %>
 			    </div>
 			    <div class="eight columns">
 			    	<%= f.text_area :message, :required => true, placeholder: "Message" %>
