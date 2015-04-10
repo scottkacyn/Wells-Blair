@@ -9,7 +9,7 @@ class Inquiry < MailForm::Base
   def headers
     {
       :subject => "New Website Inquiry",
-      :to => "info@wellsblair.com, scott@newcoastventures.com",
+      :to => "info@wellsblair.com, jb@wellsblair.com, tberchou@wellsblair.com",
       :from => %("#{name}" <#{email}>)
     }
   end
